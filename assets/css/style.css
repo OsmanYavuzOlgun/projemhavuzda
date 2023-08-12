@@ -9193,14 +9193,6 @@
   }
 }
 
-/*-------------------------------------------------------------------*/
-/* === Boostrap Main SCSS === */
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
   --blue: #5E50F9;
   --indigo: #6610f2;
@@ -21756,9 +21748,7 @@ a.text-dark:focus {
   }
 }
 
-/*-------------------------------------------------------------------*/
-/* === Template mixins === */
-/* Miscellaneous Mixins */
+
 .list-wrapper ul li .form-check,
 .list-wrapper ul li .form-check .form-check-label {
   text-overflow: ellipsis;
@@ -21767,7 +21757,6 @@ a.text-dark:focus {
   white-space: nowrap;
 }
 
-/* Animation Mixins */
 @keyframes dropdownAnimation {
   from {
     opacity: 0;
@@ -22080,12 +22069,10 @@ input:focus {
   outline: none;
 }
 
-/* Fonts */
 @font-face {
   font-family: 'Rubik';
   font-weight: 300;
   src: url("../fonts/Rubik/Rubik-Light.ttf");
-  /* IE9 Compat Modes */
 }
 
 @font-face {
@@ -26193,7 +26180,6 @@ div.tagsinput {
 /*-------------------------------------------------------------------*/
 /* === Email === */
 /*-------------------------------------------------------------------*/
-/* === Plugin overrides === */
 /* Ace Editor */
 .ace_editor {
   margin: auto;
