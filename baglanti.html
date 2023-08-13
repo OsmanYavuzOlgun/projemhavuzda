@@ -11,14 +11,16 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet"
-          href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
     <link
-    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-    rel="stylesheet"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/baglanti.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -183,10 +185,7 @@
           <li class="nav-item menu-items">
             <a class="nav-link" href="pages/charts/chartjs.html">
               <span class="menu-icon">
-                <img
-                  src="assets/images/projemhavuzda/SSS.png"
-                  alt="paketler"
-                />
+                <img src="assets/images/projemhavuzda/SSS.png" alt="paketler" />
               </span>
               <span class="menu-title">SSS</span>
             </a>
@@ -211,16 +210,12 @@
               aria-controls="auth"
             >
               <span class="menu-icon">
-                <img
-                  src="assets/images/projemhavuzda/çıkış.png"
-                  alt="profil"
-                />
+                <img src="assets/images/projemhavuzda/çıkış.png" alt="profil" />
               </span>
               <span class="menu-title">Çıkış</span>
             </a>
           </li>
         </ul>
-
       </nav>
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
@@ -229,14 +224,13 @@
           <div
             class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center"
           >
-            <a class="navbar-brand brand-logo-mini" href="index.html"
-              >PH</a>
+            <a class="navbar-brand brand-logo-mini" href="index.html">PH</a>
           </div>
           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
             <ul class="navbar-nav w-100">
               <li class="nav-item w-100">
                 <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                  <i   class="fa fa-search icon"></i>
+                  <i class="fa fa-search icon"></i>
                   <input
                     style="color: #989898"
                     type="text"
@@ -341,30 +335,69 @@
             <div class="row"></div>
             <div class="row order-status-row">
               <div class="row">
-              
                 <div class="col-12 grid-margin status">
-                  
                   <div class="card">
-                    
                     <div class="card-body">
-                       
-
                       <div class="top-headers">
-                        <a class="selected-header header-top">Projelerim</a>
-                        <a href="baglanti.html" class="header-top">Bağlantılarım</a>
+                        <a class="header-top">Projelerim</a>
+                        <a
+                          href="projects.html"
+                          class="selected-header header-top"
+                          >Bağlantılarım</a
+                        >
                         <a class="header-top">Kasam</a>
                       </div>
 
-                      
-
-                      <div class="sub-headers">
-                        <div class="left-part">
-                          <div class="selected-sub-header sub-top">Tümü</div>
-                          <div class="sub-top">Devam Eden İşler</div>
-                          <div class="sub-top">Biten İşler</div>
+                      <div class="top-container">
+                        <div class="counter-number-input">
+                          <div class="input-with-arrows">
+                            <button class="arrow-up" onclick="increaseValue()">
+                              ▲
+                            </button>
+                            <span class="count">Sayfada</span>
+                            <input
+                              class="counting"
+                              type="number"
+                              id="quantity"
+                              name="quantity"
+                              value="1"
+                              min="1"
+                              max="500"
+                            />
+                            <span class="count">Kayıt Göster</span>
+                            <button
+                              class="arrow-down"
+                              onclick="decreaseValue()"
+                            >
+                              ▼
+                            </button>
+                          </div>
                         </div>
-                        <div class="right-part">
-                          + </div>
+                        <div class="right-part-conn">
+                          <div class="right-panel-add">
+                            <div class="add-con">
+                              <img
+                                class="add-baglanti"
+                                src="assets/images/projemhavuzda/add.png"
+                                alt="add"
+                              />
+                              <span class="add-connection"> Bağlantı Ekle</span>
+                            </div>
+                            <div>
+                              <form
+                                class="nav-link mt-2 mt-md-0 d-none d-lg-flex search2"
+                              >
+                                <i class="fa fa-search icon fas"></i>
+                                <input
+                                  style="color: #989898"
+                                  type="text"
+                                  class="form-control form-c"
+                                  placeholder="Bağlantı ara"
+                                />
+                              </form>
+                            </div>
+                          </div>
+                        </div>
                       </div>
 
                       <div class="table-responsive">
@@ -372,90 +405,59 @@
                           <thead>
                             <tr class="first-tr">
                               <th>Sorumlu</th>
-                              <th>İşin Adı</th>
-                              <th>Ada</th>
-                              <th>Parsel</th>
-                              <th>Adres</th>
-                              <th>Ücret</th>
-                              <th>Tarih</th>
-                              <th>Durum</th>
+                              <th>Kullanıcı Adı</th>
+                              <th>Şehir</th>
+                              <th>Bağlantı Tarihi</th>
+                              <th></th>
                               <th></th>
                             </tr>
                           </thead>
                           <tbody>
+                        
+                           
+                           
                             <tr>
                               <td>
                                 <img
-                                  src="assets/images/faces/face1.jpg"
+                                  src="assets/images/faces/face5.jpg"
                                   alt="image"
                                 />
                                 <span class="pl-2">İbrahim Göktuğ</span>
                                 <div class="subname">İnşaat Müh.</div>
                               </td>
-                              <td>Emre Menteşe Villa</td>
-                              <td>35</td>
-                              <td>10</td>
-                              <td>917/918</td>
-                              <td>55.000 TL</td>
+                              <td>ibrahimgoktug</td>
+                              <td>İstanbul</td>
                               <td>13.03.2023</td>
-                              <td class="statu">
-                                <div class="badge badge-outline-success">
-                                  <div>Tamamlandı</div>
+                              <td>
+                                <div class="badge badge-outline-danger">
+                                  Çıkart
                                 </div>
                               </td>
                               <td>
                                 <span class="three-dots-status"
                                   ><svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
+                                    width="11"
+                                    height="16"
+                                    viewBox="0 0 11 16"
                                     fill="none"
                                   >
-                                    <path
-                                      fill-rule="evenodd"
-                                      clip-rule="evenodd"
-                                      d="M3 12C3 10.896 3.896 10 5 10C6.104 10 7 10.896 7 12C7 13.104 6.104 14 5 14C3.896 14 3 13.104 3 12ZM12 10C10.896 10 10 10.896 10 12C10 13.104 10.896 14 12 14C13.104 14 14 13.104 14 12C14 10.896 13.104 10 12 10ZM19 10C17.896 10 17 10.896 17 12C17 13.104 17.896 14 19 14C20.104 14 21 13.104 21 12C21 10.896 20.104 10 19 10Z"
-                                      fill="#989898"
-                                    /></svg
-                                ></span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <img
-                                  src="assets/images/faces/face2.jpg"
-                                  alt="image"
-                                />
-                                <span class="pl-2">İbrahim Göktuğ</span>
-                                <div class="subname">İnşaat Müh.</div>
-                              </td>
-                              <td>Emre Menteşe Villa</td>
-                              <td>35</td>
-                              <td>10</td>
-                              <td>917/918</td>
-                              <td>55.000 TL</td>
-                              <td>13.03.2023</td>
-                              <td>
-                                <div class="badge badge-outline-warning">
-                                  Devam Ediyor
-                                </div>
-                              </td>
-                              <td>
-                                <span class="three-dots-status"
-                                  ><svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      clip-rule="evenodd"
-                                      d="M3 12C3 10.896 3.896 10 5 10C6.104 10 7 10.896 7 12C7 13.104 6.104 14 5 14C3.896 14 3 13.104 3 12ZM12 10C10.896 10 10 10.896 10 12C10 13.104 10.896 14 12 14C13.104 14 14 13.104 14 12C14 10.896 13.104 10 12 10ZM19 10C17.896 10 17 10.896 17 12C17 13.104 17.896 14 19 14C20.104 14 21 13.104 21 12C21 10.896 20.104 10 19 10Z"
-                                      fill="#989898"
-                                    /></svg
+                                    <g clip-path="url(#clip0_1_5292)">
+                                      <path
+                                        d="M-1.55009 17.5439L8.4601 17.5439C8.54227 17.5439 8.60951 17.4741 8.60951 17.3887L8.60951 16.302C8.60951 16.2166 8.54228 16.1468 8.4601 16.1468L-0.803057 16.1468L-0.803055 2.79621C-0.803055 2.71083 -0.870288 2.64097 -0.952461 2.64097L-1.9983 2.64097C-2.08047 2.64097 -2.14771 2.71083 -2.14771 2.79621L-2.14771 16.923C-2.14771 17.2665 -1.88065 17.5439 -1.55009 17.5439ZM0.840408 15.0601L10.4024 15.0601C10.7329 15.0601 11 14.7826 11 14.4392L11 4.14097C11 3.97603 10.9365 3.81885 10.8244 3.70242L7.58795 0.339548C7.54686 0.296858 7.50017 0.261928 7.44975 0.232822L7.44975 0.195951L7.37131 0.195951C7.30594 0.170725 7.23684 0.157142 7.16588 0.157142L0.840409 0.157142C0.509848 0.157142 0.242786 0.434632 0.242786 0.778098L0.242785 14.4392C0.242785 14.7826 0.509847 15.0601 0.840408 15.0601ZM6.85399 1.39906L6.85773 1.39906L9.65535 4.30591L9.65535 4.30979L6.85399 4.30979L6.85399 1.39906Z"
+                                        fill="#989898"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_1_5292">
+                                        <rect
+                                          width="11"
+                                          height="15"
+                                          fill="white"
+                                          transform="translate(11 15.1572) rotate(-180)"
+                                        />
+                                      </clipPath>
+                                    </defs></svg
                                 ></span>
                               </td>
                             </tr>
@@ -468,32 +470,39 @@
                                 <span class="pl-2">İbrahim Göktuğ</span>
                                 <div class="subname">İnşaat Müh.</div>
                               </td>
-                              <td>Emre Menteşe Villa</td>
-                              <td>35</td>
-                              <td>10</td>
-                              <td>917/918</td>
-                              <td>55.000 TL</td>
+                              <td>ibrahimgoktug</td>
+                              <td>İstanbul</td>
                               <td>13.03.2023</td>
                               <td>
                                 <div class="badge badge-outline-danger">
-                                  Tamamlanmadı
+                                  Çıkart
                                 </div>
                               </td>
                               <td>
                                 <span class="three-dots-status"
                                   ><svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
+                                    width="11"
+                                    height="16"
+                                    viewBox="0 0 11 16"
                                     fill="none"
                                   >
-                                    <path
-                                      fill-rule="evenodd"
-                                      clip-rule="evenodd"
-                                      d="M3 12C3 10.896 3.896 10 5 10C6.104 10 7 10.896 7 12C7 13.104 6.104 14 5 14C3.896 14 3 13.104 3 12ZM12 10C10.896 10 10 10.896 10 12C10 13.104 10.896 14 12 14C13.104 14 14 13.104 14 12C14 10.896 13.104 10 12 10ZM19 10C17.896 10 17 10.896 17 12C17 13.104 17.896 14 19 14C20.104 14 21 13.104 21 12C21 10.896 20.104 10 19 10Z"
-                                      fill="#989898"
-                                    /></svg
+                                    <g clip-path="url(#clip0_1_5292)">
+                                      <path
+                                        d="M-1.55009 17.5439L8.4601 17.5439C8.54227 17.5439 8.60951 17.4741 8.60951 17.3887L8.60951 16.302C8.60951 16.2166 8.54228 16.1468 8.4601 16.1468L-0.803057 16.1468L-0.803055 2.79621C-0.803055 2.71083 -0.870288 2.64097 -0.952461 2.64097L-1.9983 2.64097C-2.08047 2.64097 -2.14771 2.71083 -2.14771 2.79621L-2.14771 16.923C-2.14771 17.2665 -1.88065 17.5439 -1.55009 17.5439ZM0.840408 15.0601L10.4024 15.0601C10.7329 15.0601 11 14.7826 11 14.4392L11 4.14097C11 3.97603 10.9365 3.81885 10.8244 3.70242L7.58795 0.339548C7.54686 0.296858 7.50017 0.261928 7.44975 0.232822L7.44975 0.195951L7.37131 0.195951C7.30594 0.170725 7.23684 0.157142 7.16588 0.157142L0.840409 0.157142C0.509848 0.157142 0.242786 0.434632 0.242786 0.778098L0.242785 14.4392C0.242785 14.7826 0.509847 15.0601 0.840408 15.0601ZM6.85399 1.39906L6.85773 1.39906L9.65535 4.30591L9.65535 4.30979L6.85399 4.30979L6.85399 1.39906Z"
+                                        fill="#989898"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_1_5292">
+                                        <rect
+                                          width="11"
+                                          height="15"
+                                          fill="white"
+                                          transform="translate(11 15.1572) rotate(-180)"
+                                        />
+                                      </clipPath>
+                                    </defs></svg
                                 ></span>
                               </td>
                             </tr>
@@ -506,32 +515,39 @@
                                 <span class="pl-2">İbrahim Göktuğ</span>
                                 <div class="subname">İnşaat Müh.</div>
                               </td>
-                              <td>Emre Menteşe Villa</td>
-                              <td>35</td>
-                              <td>10</td>
-                              <td>917/918</td>
-                              <td>55.000 TL</td>
+                              <td>ibrahimgoktug</td>
+                              <td>İstanbul</td>
                               <td>13.03.2023</td>
                               <td>
                                 <div class="badge badge-outline-danger">
-                                  Tamamlanmadı
+                                  Çıkart
                                 </div>
                               </td>
                               <td>
                                 <span class="three-dots-status"
                                   ><svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
+                                    width="11"
+                                    height="16"
+                                    viewBox="0 0 11 16"
                                     fill="none"
                                   >
-                                    <path
-                                      fill-rule="evenodd"
-                                      clip-rule="evenodd"
-                                      d="M3 12C3 10.896 3.896 10 5 10C6.104 10 7 10.896 7 12C7 13.104 6.104 14 5 14C3.896 14 3 13.104 3 12ZM12 10C10.896 10 10 10.896 10 12C10 13.104 10.896 14 12 14C13.104 14 14 13.104 14 12C14 10.896 13.104 10 12 10ZM19 10C17.896 10 17 10.896 17 12C17 13.104 17.896 14 19 14C20.104 14 21 13.104 21 12C21 10.896 20.104 10 19 10Z"
-                                      fill="#989898"
-                                    /></svg
+                                    <g clip-path="url(#clip0_1_5292)">
+                                      <path
+                                        d="M-1.55009 17.5439L8.4601 17.5439C8.54227 17.5439 8.60951 17.4741 8.60951 17.3887L8.60951 16.302C8.60951 16.2166 8.54228 16.1468 8.4601 16.1468L-0.803057 16.1468L-0.803055 2.79621C-0.803055 2.71083 -0.870288 2.64097 -0.952461 2.64097L-1.9983 2.64097C-2.08047 2.64097 -2.14771 2.71083 -2.14771 2.79621L-2.14771 16.923C-2.14771 17.2665 -1.88065 17.5439 -1.55009 17.5439ZM0.840408 15.0601L10.4024 15.0601C10.7329 15.0601 11 14.7826 11 14.4392L11 4.14097C11 3.97603 10.9365 3.81885 10.8244 3.70242L7.58795 0.339548C7.54686 0.296858 7.50017 0.261928 7.44975 0.232822L7.44975 0.195951L7.37131 0.195951C7.30594 0.170725 7.23684 0.157142 7.16588 0.157142L0.840409 0.157142C0.509848 0.157142 0.242786 0.434632 0.242786 0.778098L0.242785 14.4392C0.242785 14.7826 0.509847 15.0601 0.840408 15.0601ZM6.85399 1.39906L6.85773 1.39906L9.65535 4.30591L9.65535 4.30979L6.85399 4.30979L6.85399 1.39906Z"
+                                        fill="#989898"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_1_5292">
+                                        <rect
+                                          width="11"
+                                          height="15"
+                                          fill="white"
+                                          transform="translate(11 15.1572) rotate(-180)"
+                                        />
+                                      </clipPath>
+                                    </defs></svg
                                 ></span>
                               </td>
                             </tr>
@@ -544,146 +560,39 @@
                                 <span class="pl-2">İbrahim Göktuğ</span>
                                 <div class="subname">İnşaat Müh.</div>
                               </td>
-                              <td>Emre Menteşe Villa</td>
-                              <td>35</td>
-                              <td>10</td>
-                              <td>917/918</td>
-                              <td>55.000 TL</td>
+                              <td>ibrahimgoktug</td>
+                              <td>İstanbul</td>
                               <td>13.03.2023</td>
                               <td>
                                 <div class="badge badge-outline-danger">
-                                  Tamamlanmadı
+                                  Çıkart
                                 </div>
                               </td>
                               <td>
                                 <span class="three-dots-status"
                                   ><svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
+                                    width="11"
+                                    height="16"
+                                    viewBox="0 0 11 16"
                                     fill="none"
                                   >
-                                    <path
-                                      fill-rule="evenodd"
-                                      clip-rule="evenodd"
-                                      d="M3 12C3 10.896 3.896 10 5 10C6.104 10 7 10.896 7 12C7 13.104 6.104 14 5 14C3.896 14 3 13.104 3 12ZM12 10C10.896 10 10 10.896 10 12C10 13.104 10.896 14 12 14C13.104 14 14 13.104 14 12C14 10.896 13.104 10 12 10ZM19 10C17.896 10 17 10.896 17 12C17 13.104 17.896 14 19 14C20.104 14 21 13.104 21 12C21 10.896 20.104 10 19 10Z"
-                                      fill="#989898"
-                                    /></svg
-                                ></span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <img
-                                  src="assets/images/faces/face5.jpg"
-                                  alt="image"
-                                />
-                                <span class="pl-2">İbrahim Göktuğ</span>
-                                <div class="subname">İnşaat Müh.</div>
-                              </td>
-                              <td>Emre Menteşe Villa</td>
-                              <td>35</td>
-                              <td>10</td>
-                              <td>917/918</td>
-                              <td>55.000 TL</td>
-                              <td>13.03.2023</td>
-                              <td>
-                                <div class="badge badge-outline-danger">
-                                  Tamamlanmadı
-                                </div>
-                              </td>
-                              <td>
-                                <span class="three-dots-status"
-                                  ><svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      clip-rule="evenodd"
-                                      d="M3 12C3 10.896 3.896 10 5 10C6.104 10 7 10.896 7 12C7 13.104 6.104 14 5 14C3.896 14 3 13.104 3 12ZM12 10C10.896 10 10 10.896 10 12C10 13.104 10.896 14 12 14C13.104 14 14 13.104 14 12C14 10.896 13.104 10 12 10ZM19 10C17.896 10 17 10.896 17 12C17 13.104 17.896 14 19 14C20.104 14 21 13.104 21 12C21 10.896 20.104 10 19 10Z"
-                                      fill="#989898"
-                                    /></svg
-                                ></span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <img
-                                  src="assets/images/faces/face3.jpg"
-                                  alt="image"
-                                />
-                                <span class="pl-2">İbrahim Göktuğ</span>
-                                <div class="subname">İnşaat Müh.</div>
-                              </td>
-                              <td>Emre Menteşe Villa</td>
-                              <td>35</td>
-                              <td>10</td>
-                              <td>917/918</td>
-                              <td>55.000 TL</td>
-                              <td>13.03.2023</td>
-                              <td>
-                                <div class="badge badge-outline-success">
-                                  Tamamlandı
-                                </div>
-                              </td>
-                              <td>
-                                <span class="three-dots-status"
-                                  ><svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      clip-rule="evenodd"
-                                      d="M3 12C3 10.896 3.896 10 5 10C6.104 10 7 10.896 7 12C7 13.104 6.104 14 5 14C3.896 14 3 13.104 3 12ZM12 10C10.896 10 10 10.896 10 12C10 13.104 10.896 14 12 14C13.104 14 14 13.104 14 12C14 10.896 13.104 10 12 10ZM19 10C17.896 10 17 10.896 17 12C17 13.104 17.896 14 19 14C20.104 14 21 13.104 21 12C21 10.896 20.104 10 19 10Z"
-                                      fill="#989898"
-                                    /></svg
-                                ></span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <img
-                                  src="assets/images/faces/face4.jpg"
-                                  alt="image"
-                                />
-                                <span class="pl-2">İbrahim Göktuğ</span>
-                                <div class="subname">İnşaat Müh.</div>
-                              </td>
-                              <td>Emre Menteşe Villa</td>
-                              <td>35</td>
-                              <td>10</td>
-                              <td>917/918</td>
-                              <td>55.000 TL</td>
-                              <td>13.03.2023</td>
-                              <td>
-                                <div class="badge badge-outline-success">
-                                  Tamamlandı
-                                </div>
-                              </td>
-                              <td>
-                                <span class="three-dots-status"
-                                  ><svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      clip-rule="evenodd"
-                                      d="M3 12C3 10.896 3.896 10 5 10C6.104 10 7 10.896 7 12C7 13.104 6.104 14 5 14C3.896 14 3 13.104 3 12ZM12 10C10.896 10 10 10.896 10 12C10 13.104 10.896 14 12 14C13.104 14 14 13.104 14 12C14 10.896 13.104 10 12 10ZM19 10C17.896 10 17 10.896 17 12C17 13.104 17.896 14 19 14C20.104 14 21 13.104 21 12C21 10.896 20.104 10 19 10Z"
-                                      fill="#989898"
-                                    /></svg
+                                    <g clip-path="url(#clip0_1_5292)">
+                                      <path
+                                        d="M-1.55009 17.5439L8.4601 17.5439C8.54227 17.5439 8.60951 17.4741 8.60951 17.3887L8.60951 16.302C8.60951 16.2166 8.54228 16.1468 8.4601 16.1468L-0.803057 16.1468L-0.803055 2.79621C-0.803055 2.71083 -0.870288 2.64097 -0.952461 2.64097L-1.9983 2.64097C-2.08047 2.64097 -2.14771 2.71083 -2.14771 2.79621L-2.14771 16.923C-2.14771 17.2665 -1.88065 17.5439 -1.55009 17.5439ZM0.840408 15.0601L10.4024 15.0601C10.7329 15.0601 11 14.7826 11 14.4392L11 4.14097C11 3.97603 10.9365 3.81885 10.8244 3.70242L7.58795 0.339548C7.54686 0.296858 7.50017 0.261928 7.44975 0.232822L7.44975 0.195951L7.37131 0.195951C7.30594 0.170725 7.23684 0.157142 7.16588 0.157142L0.840409 0.157142C0.509848 0.157142 0.242786 0.434632 0.242786 0.778098L0.242785 14.4392C0.242785 14.7826 0.509847 15.0601 0.840408 15.0601ZM6.85399 1.39906L6.85773 1.39906L9.65535 4.30591L9.65535 4.30979L6.85399 4.30979L6.85399 1.39906Z"
+                                        fill="#989898"
+                                      />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_1_5292">
+                                        <rect
+                                          width="11"
+                                          height="15"
+                                          fill="white"
+                                          transform="translate(11 15.1572) rotate(-180)"
+                                        />
+                                      </clipPath>
+                                    </defs></svg
                                 ></span>
                               </td>
                             </tr>
@@ -691,8 +600,22 @@
                         </table>
                       </div>
                       <div class="bottom-footer">
-                        <div class="dosya">Dosyalarım</div>
-                        <div class="dosya-count">116 Dosya</div>
+                        <div class="warning-records">49 kayıttan 1 - 10 arası kayıtlar gösteriliyor.</div>
+                        <ul id="border-pagination">
+                          <li><a class="" href="#">İlk</a></li>
+                          <li><a class="" href="#">Önceki</a></li>
+                          <li><a href="#">1</a></li>
+                          <li><a href="#" class="active">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">6</a></li>
+                          <li><a href="#">7</a></li>
+                          <li><a href="#">Sonraki</a></li>
+                          <li><a class="" href="#">Son</a></li>
+
+                        </ul> 
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -704,4 +627,5 @@
       </div>
     </div>
   </body>
+  <script src="main.js"></script>
 </html>
