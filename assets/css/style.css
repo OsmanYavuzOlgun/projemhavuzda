@@ -30639,6 +30639,7 @@ div.tagsinput span.tag a {
 .nav-bottom{
   position: absolute;
     bottom: 10px;
+    position: fixed;
 }
 
 @media (max-width: 576px) {

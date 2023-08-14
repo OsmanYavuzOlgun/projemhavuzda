@@ -7,19 +7,19 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Projem Havuzda</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Mulish:wght@500&display=swap"
-      rel="stylesheet"
-    />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/pricing.css" />
+    <link rel="stylesheet" href="assets/css/baglanti.css" />
+    <link rel="stylesheet" href="assets/css/kasam.css" />
+    <link rel="stylesheet" href="assets/css/ayarlar.css" />
+
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -144,7 +144,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/icons/mdi.html">
+            <a class="nav-link" href="ayarlar.html">
               <span class="menu-icon">
                 <img
                   src="assets/images/projemhavuzda/ayarlar.png"
@@ -283,131 +283,134 @@
           </div>
         </nav>
         <!-- partial -->
-
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="row col-row">
-              <div class="pan" style="text-align: center">Planını Seç</div>
-              <div class="no" style="text-align: center">
-                No contracts, no surprise fees.
-              </div>
-              <div style="text-align: center" class="fieldset">
-                <input
-                  type="radio"
-                  name="duration-1"
-                  value="monthly"
-                  id="monthly-1"
-                />
-                <label class="label" for="monthly-1">Aylık</label>
-                <input
-                  type="radio"
-                  name="duration-1"
-                  value="yearly"
-                  id="yearly-1"
-                />
-                <label class="label yil" for="yearly-1">Yıllık</label>
-              </div>
+            <div class="row"></div>
+            <div class="row order-status-row">
+              <div class="row">
+                <div class="col-12 grid-margin status">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="top-headers top-v3">
+                        <a href="ayarlar.html" class="header-top"
+                          >Genel Ayarlar</a
+                        >
+                        <a href="bankaayarlar.html" class="header-top"
+                          >Banka ve Ödeme Bilgileri</a
+                        >
+                        <a href="guvenlik.html" class="header-top">Güvenlik</a>
+                        <a
+                          href="bildirim.html"
+                          class="selected-header header-top"
+                          >Bildirim Ayarları</a
+                        >
+                      </div>
 
-              <div class="pricing-cards-all">
-                <div class="pricing-card basic">
-                  <div class="heading">
-                    <h4 class="header-title">Lite</h4>
-                    <p class="yillik">1 Yıllık pakettir</p>
-                  </div>
-                  <p class="price">
-                    160₺
-                    <span class="month-text">/Ay</span>
-                  </p>
-                  <ul class="features">
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Manuel muhasebe sistemi
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Teklif formu oluştur
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Extre formu oluştur
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Hızlı dosya yükle ve gizle
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Karşılıklı hızlı ön muhasebe
-                    </li>
-                  </ul>
-                  <button class="cta-btn">Plan Seç</button>
-                </div>
+                      <div class="all-tables">
+                        <div class="table-responsive right-table">
+                          <div class="text-common">
+                            Mobil Uygulama Bildirim Ayarları
+                          </div>
+                          <div class="checkboxes margin-check">
+                            <label class="main">
+                              <input type="checkbox" class="not-ch" />
+                              <span class="geekmark"></span>
+                              <span class="checkbox-label"
+                                >Tüm aktivitelerde gönder</span
+                              >
+                            </label>
 
-                <div class="pricing-card standard">
-                  <div class="heading">
-                    <h4 class="header-title">Lite</h4>
-                    <p class="yillik">3 Yıllık pakettir</p>
+                            <label class="main">
+                              <input
+                                type="checkbox"
+                                class="not-ch"
+                                checked="checked"
+                              />
+                              <span class="geekmark"></span>
+                              <span class="checkbox-label"
+                                >Sadece önemli aktivitelerde gönder</span
+                              >
+                            </label>
+
+                            <label class="main">
+                              <input type="checkbox" class="not-ch" />
+                              <span class="geekmark"></span>
+                              <span class="checkbox-label"
+                                >Bildirim Gönderme</span
+                              >
+                            </label>
+                          </div>
+                          <div class="text-common">
+                            E-Posta Bildirim ayarları
+                          </div>
+
+                          <div class="checkboxes margin-check">
+                            <label class="main">
+                              <input type="checkbox" class="not-ch" />
+                              <span class="geekmark"></span>
+                              <span class="checkbox-label"
+                                >Tüm aktivitelerde gönder</span
+                              >
+                            </label>
+
+                            <label class="main">
+                              <input
+                                type="checkbox"
+                                class="not-ch"
+                                checked="checked"
+                              />
+                              <span class="geekmark"></span>
+                              <span class="checkbox-label"
+                                >Sadece önemli aktivitelerde gönder</span
+                              >
+                            </label>
+
+                            <label class="main">
+                              <input type="checkbox" class="not-ch" />
+                              <span class="geekmark"></span>
+                              <span class="checkbox-label"
+                                >Bildirim Gönderme</span
+                              >
+                            </label>
+                          </div>
+
+                          <div class="text-common">
+                            Web Sitesi Bildirim Ayarları
+                          </div>
+
+                          <div class="checkboxes margin-check">
+                            <label class="main">
+                              <input type="checkbox" class="not-ch" />
+                              <span class="geekmark"></span>
+                              <span class="checkbox-label"
+                                >Tüm aktivitelerde gönder</span
+                              >
+                            </label>
+
+                            <label class="main">
+                              <input
+                                type="checkbox"
+                                class="not-ch"
+                                checked="checked"
+                              />
+                              <span class="geekmark"></span>
+                              <span class="checkbox-label"
+                                >Sadece önemli aktivitelerde gönder</span
+                              >
+                            </label>
+
+                            <label class="main">
+                              <input type="checkbox" class="not-ch" />
+                              <span class="geekmark"></span>
+                              <span class="checkbox-label"
+                                >Bildirim Gönderme</span
+                              >
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <p class="price">
-                    90₺
-                    <span class="month-text">/Ay</span>
-                  </p>
-                  <ul class="features">
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Manuel muhasebe sistemi
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Teklif formu oluştur
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Extre formu oluştur
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Hızlı dosya yükle ve gizle
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Karşılıklı hızlı ön muhasebe
-                    </li>
-                  </ul>
-                  <button class="cta-btn">Plan Seç</button>
-                </div>
-                <div class="pricing-card premium">
-                  <div class="heading">
-                    <h4 class="header-title">Enterprise</h4>
-                    <p class="yillik">2 Yıllık pakettir</p>
-                  </div>
-                  <p class="price">
-                    120₺
-                    <span class="month-text">/Ay</span>
-                  </p>
-                  <ul class="features">
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Manuel muhasebe sistemi
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Teklif formu oluştur
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Extre formu oluştur
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Hızlı dosya yükle ve gizle
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Karşılıklı hızlı ön muhasebe
-                    </li>
-                  </ul>
-                  <button class="cta-btn">Plan Seç</button>
                 </div>
               </div>
             </div>
@@ -417,11 +420,4 @@
     </div>
   </body>
   <script src="main.js"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
 </html>

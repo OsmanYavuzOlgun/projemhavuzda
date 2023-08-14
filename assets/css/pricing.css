@@ -56,9 +56,17 @@ input[type="radio"] {
   opacity: 0;
 }
 
+.header-title {
+  color: #fff !important;
+  text-align: center;
+  font-size: 26px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 32px;
+}
+
 .price {
   list-style-type: none;
-  border: 1px solid #eee;
   margin: 0;
   padding: 0;
   -webkit-transition: 0.3s;
@@ -70,14 +78,11 @@ input[type="radio"] {
 }
 
 .price .header {
-  background-color: #111;
   color: white;
   font-size: 25px;
 }
 
 .price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
   text-align: center;
 }
 
@@ -108,4 +113,150 @@ input[type="radio"] {
   .columns {
     width: 100%;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.pricing-cards-all {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.pricing-plans {
+  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 64px;
+}
+
+.pricing-card {
+  --col: #e4e4e7;
+  position: relative;
+  max-width: 352px;
+  width: 100%;
+  padding: 32px;
+  padding-bottom: 96px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 20px;
+  border: 1px solid #282828;
+  height: 100%;
+  max-height: 707px;
+}
+
+
+.pricing-card:hover {
+  background: #161616;
+  transform: translateY(-16px) scale(1.02);
+  transition: all 0.5s ease;
+}
+
+.pricing-card > *:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.month-text {
+  color: #989898;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+}
+.yillik {
+  color: #989898;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.pricing-card .price {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-card .price sub {
+  position: absolute;
+  bottom: 14px;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.features {
+  margin-left: 40px;
+}
+
+.fa-check:before {
+  color: #f39200;
+}
+
+.pricing-card .features li {
+  padding-bottom: 16px;
+  color: #a3a3a3;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.pricing-card .features li i,
+.pricing-card .features li strong {
+  color: #e4e4e7;
+  font-size: 16px;
+  text-align: left;
+}
+
+.pricing-card .features li strong {
+  padding-left: 24px;
+}
+
+.pricing-card .cta-btn {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 216px;
+  padding: 12px;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  border-radius: 8px;
+  border: none;
+  background: #f39200;
+}
+
+.pricing-card .cta-btn:active {
+  background-color: transparent;
+  color: var(--col);
+  transition: all 0.3s ease;
 }

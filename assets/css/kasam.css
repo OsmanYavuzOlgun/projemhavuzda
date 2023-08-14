@@ -1,0 +1,142 @@
+.deposit,
+.with {
+  color: #3ac348;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.with {
+  color: #ff1f00 !important;
+}
+
+.account {
+  border-radius: 12px;
+  background: #3ac348;
+  padding: 21px 0px;
+  width: 263px;
+  height: 124px;
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.bottom-button {
+  border-radius: 8px;
+  background: #f39200 !important;
+  display: flex;
+  width: 263px;
+  height: 48px !important;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.withdraw-button {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.sub-subpl-2 {
+  color: #989898 !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: normal !important;
+}
+
+.subpl-2 {
+  color: #989898 !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+
+.account .pl-2 {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.account .subname {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.deposit .image {
+  width: 50px;
+  height: 50px;
+}
+
+.v2 td {
+  padding: 0 0.9375rem;
+}
+
+.v2 {
+  height: 100px;
+  border-radius: 8px;
+  background: #161616;
+}
+
+thead {
+  display: none;
+}
+.subname {
+  margin-left: 0;
+  margin-top: 12px;
+  padding-left: 0.5rem !important;
+}
+
+.all-tables {
+  display: flex;
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
+}
+
+.with2{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.left-table {
+  width: 25%;
+  margin-right: 30px;
+
+  @media (max-width: 991px) {
+    margin: 0 auto;
+    max-width: fit-content;
+    width: 100%;
+  }
+}
+
+.left-table tr {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.right-table {
+  width: 75%;
+
+  @media (max-width: 991px) {
+    margin: 0 auto;
+    max-width: fit-content;
+    width: 100%;
+
+  }
+}
+
+.table-responsive tr:nth-child(2n-1) {
+  border-left: 4px solid transparent;
+}
+
+.table-responsive tr:nth-child(2n) {
+  border-left: 4px solid transparent;
+}

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Projem Havuzda</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/baglanti.css" />
+    <link rel="stylesheet" href="assets/css/kasam.css" />
+    <link rel="stylesheet" href="assets/css/ayarlar.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div
+          class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top"
+        >
+          <a class="sidebar-brand brand-logo" href="index.html"
+            ><img src="assets/images/projemhavuzda/logo.png" alt="logo"
+          /></a>
+          <a class="sidebar-brand brand-logo-mini" href="index.html"
+            ><img src="assets/images/projemhavuzda/logo.png" alt="logo"
+          /></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/anasayfa.png"
+                  alt="anasayfa"
+                />
+              </span>
+              <span class="menu-title">Anasayfa</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#ui-basic"
+              aria-expanded="false"
+              aria-controls="ui-basic"
+            >
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/muhasebe.png"
+                  alt="muhasebe"
+                />
+              </span>
+              <span class="menu-title">Muhasebe</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="pages/forms/basic_elements.html">
+              <span class="menu-icon">
+                <img src="assets/images/projemhavuzda/havuz.png" alt="havuz" />
+              </span>
+              <span class="menu-title">Havuz</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="pages/tables/basic-table.html">
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/ilanlar.png"
+                  alt="ilanlar"
+                />
+              </span>
+              <span class="menu-title">İlanlar</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="pages/charts/chartjs.html">
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/paketler.png"
+                  alt="paketler"
+                />
+              </span>
+              <span class="menu-title">Paketler</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="pages/icons/mdi.html">
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/bağlantılar.png"
+                  alt="bağlantılar"
+                />
+              </span>
+              <span class="menu-title">Bağlantılar</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#auth"
+              aria-expanded="false"
+              aria-controls="auth"
+            >
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/profil.png"
+                  alt="profil"
+                />
+              </span>
+              <span class="menu-title">Profil</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="nav nav-bottom">
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="pages/charts/chartjs.html">
+              <span class="menu-icon">
+                <img src="assets/images/projemhavuzda/SSS.png" alt="paketler" />
+              </span>
+              <span class="menu-title">SSS</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="ayarlar.html">
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/ayarlar.png"
+                  alt="bağlantılar"
+                />
+              </span>
+              <span class="menu-title">Ayarlar</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#auth"
+              aria-expanded="false"
+              aria-controls="auth"
+            >
+              <span class="menu-icon">
+                <img src="assets/images/projemhavuzda/çıkış.png" alt="profil" />
+              </span>
+              <span class="menu-title">Çıkış</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div
+            class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center"
+          >
+            <a class="navbar-brand brand-logo-mini" href="index.html">PH</a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                  <i class="fa fa-search icon"></i>
+                  <input
+                    style="color: #989898"
+                    type="text"
+                    class="form-control"
+                    placeholder="Type something for search..."
+                  />
+                </form>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li>
+                <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+              </li>
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a
+                  class="nav-link btn btn-success create-new-button"
+                  id="createbuttonDropdown"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                  ><img
+                    src="assets/images/projemhavuzda/icon1.svg"
+                    alt="icon 1"
+                /></a>
+              </li>
+
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a
+                  class="nav-link btn btn-success create-new-button"
+                  id="createbuttonDropdown"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                  ><img
+                    src="assets/images/projemhavuzda/icon2.svg"
+                    alt="icon 2"
+                /></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  id="profileDropdown"
+                  href="#"
+                  data-toggle="dropdown"
+                >
+                  <div class="navbar-profile">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">
+                      İbrahim Göktuğ
+                    </p>
+                    <img
+                      class="img-xs rounded-circle d-sm-block navbar-profile-name"
+                      src="assets/images/faces/face15.jpg"
+                      alt=""
+                    />
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                  aria-labelledby="profileDropdown"
+                >
+                  <h6 class="p-3 mb-0">Profile</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                </div>
+              </li>
+            </ul>
+            <button
+              class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+              type="button"
+              data-toggle="offcanvas"
+            >
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row"></div>
+            <div class="row order-status-row">
+              <div class="row">
+                <div class="col-12 grid-margin status">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="top-headers">
+                        <a href="ayarlar.html" class="selected-header  header-top"
+                          >Genel Ayarlar</a
+                        >
+                        <a
+                          href="bankaayarlar.html"
+                          class="header-top"
+                          >Banka ve Ödeme Bilgileri</a
+                        >
+                        <a href="guvenlik.html" class="header-top">Güvenlik</a>
+                        <a href="bildirim.html" class="header-top">Bildirim Ayarları</a>
+                      </div>
+
+                      <div class="all-tables">
+                        <div class="table-responsive left-table">
+                          <div class="profile-image">
+                            <img
+                              class="profile"
+                              src="assets/images/projemhavuzda/profile-image.png"
+                              alt="profile"
+                            />
+                          </div>
+                          <div class="change">Değiştir</div>
+                          <div class="name">İbrahim Göktuğ</div>
+                          <div class="subname">@ibrahimgoktug</div>
+                          <div class="form-logo">Form logosu yerleştir</div>
+                          <div class="logo-image-change">
+                            <img
+                              src="assets/images/projemhavuzda/eksre.png"
+                              alt="eksre"
+                            />
+                            ekstre-logo.png
+                          </div>
+                          <div class="account-cancel">
+                            Hesabını Askıya Al
+                          </div>
+                        </div>
+
+                        <div class="table-responsive right-table">
+                          <div class="text-common">İzinler</div>
+                          <div class="checkboxes">
+                            <label class="main">
+                              <input type="checkbox" class="not-ch" />
+                              <span class="geekmark"></span>
+                              <span class="checkbox-label"
+                                >Profilimi Gizle</span
+                              >
+                            </label>
+
+                            <label class="main">
+                              <input type="checkbox" class="not-ch" checked="checked" />
+                              <span class="geekmark"></span>
+                              <span class="checkbox-label"
+                                >Dosyalarımı Gizle</span
+                              >
+                            </label>
+
+                            <label class="main">
+                              <input type="checkbox" class="not-ch" />
+                              <span class="geekmark"></span>
+                              <span class="checkbox-label"
+                                >İletişimi engelle</span
+                              >
+                            </label>
+                          </div>
+                          <div class="text-common">Kişisel Bilgiler</div>
+                          <div class="information-inputs">
+                            <div class="first-input-row">
+                              <div class="left">
+                                <label for="fname">İsim</label>
+                                <input
+                                  type="text"
+                                  id="fname"
+                                  name="fname"
+                                  placeholder="Berkay"
+                                />
+                              </div>
+                              <div class="right">
+                                <label for="fsurname">Soyisim</label>
+                                <input
+                                  type="text"
+                                  id="fsurname"
+                                  name="fsurname"
+                                  placeholder="Sezer"
+                                />
+                              </div>
+                            </div>
+                            <div class="first-input-row">
+                              <div class="left">
+                                <label for="fname">Kullanıcı Adı</label>
+                                <input
+                                  type="text"
+                                  id="fname"
+                                  name="fname"
+                                  placeholder="@berkaysezer"
+                                />
+                              </div>
+                              <div class="right">
+                                <label for="fsurname">E-posta Adresi</label>
+                                <input
+                                  type="text"
+                                  id="fsurname"
+                                  name="fsurname"
+                                  placeholder="deneme@gmail.com"
+                                />
+                              </div>
+                            </div>
+
+                            <div class="first-input-row">
+                              <div class="left">
+                                <label for="fname">İletişim Numarası</label>
+                                <input
+                                  class="all-row"
+                                  type="text"
+                                  id="fname"
+                                  name="fname"
+                                  placeholder="+90 (555) 999 99 99"
+                                />
+                              </div>
+                            </div>
+                            <div class="first-input-row">
+                              <div class="left">
+                                <label for="exp">Hakkında</label>
+                                <textarea
+                                  class="textarea"
+                                  id="exp"
+                                  name="exp"
+                                  rows="4"
+                                  cols="60"
+                                  placeholder="Mesleğiniz ve hobilerinizden bahsedebilirsiniz."
+                                ></textarea>
+                              </div>
+                            </div>
+                            <div class="first-input-row save-row">
+                              <div class="left">
+                                <input type="button" value="Kaydet" class="save-button bottom-s">
+                              </input>
+                              </div>
+                            </div>
+                            <div class="bottom-information">
+                              <div class="both-containers">
+                                <div class="all-bg">
+                                  <div class="text-common ss">
+                                    Uzmanı Olduğu Alanlar/Araçlar
+                                  </div>
+                                  <div class="all-user">
+                                    <select
+                                      class="common-bg"
+                                      name="alanlar"
+                                      id="alanlar"
+                                    >
+                                      <option value="kullanıcı">
+                                        Kullanıcı
+                                      </option>
+                                      <option value="kullanıcı">
+                                        Kullanıcı
+                                      </option>
+                                      <option value="kullanıcı">
+                                        Kullanıcı
+                                      </option>
+                                      <option value="kullanıcı">
+                                        Kullanıcı
+                                      </option>
+                                    </select>
+                                    <div class="common-bg">
+                                      Kullanıcı Arabirimi Tasarımı
+                                    </div>
+                                  </div>
+                                  <div class="araclar">
+                                    <div class="common-bg">
+                                      AutoCad
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="6"
+                                        height="6"
+                                        viewBox="0 0 6 6"
+                                        fill="none"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M3.70697 3.00006L5.85338 0.853607C6.04887 0.658111 6.04887 0.342118 5.85338 0.146622C5.65789 -0.048874 5.3419 -0.048874 5.14641 0.146622L3 2.29308L0.853589 0.146622C0.658098 -0.048874 0.342111 -0.048874 0.146619 0.146622C-0.048873 0.342118 -0.048873 0.658111 0.146619 0.853607L2.29303 3.00006L0.146619 5.14652C-0.048873 5.34201 -0.048873 5.65801 0.146619 5.8535C0.244115 5.951 0.372109 6 0.500104 6C0.628099 6 0.756094 5.951 0.853589 5.8535L3 3.70705L5.14641 5.8535C5.24391 5.951 5.3719 6 5.4999 6C5.62789 6 5.75589 5.951 5.85338 5.8535C6.04887 5.65801 6.04887 5.34201 5.85338 5.14652L3.70697 3.00006Z"
+                                          fill="#989898"
+                                        />
+                                      </svg>
+                                    </div>
+                                    <div class="common-bg">
+                                      AutoCad
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="6"
+                                        height="6"
+                                        viewBox="0 0 6 6"
+                                        fill="none"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M3.70697 3.00006L5.85338 0.853607C6.04887 0.658111 6.04887 0.342118 5.85338 0.146622C5.65789 -0.048874 5.3419 -0.048874 5.14641 0.146622L3 2.29308L0.853589 0.146622C0.658098 -0.048874 0.342111 -0.048874 0.146619 0.146622C-0.048873 0.342118 -0.048873 0.658111 0.146619 0.853607L2.29303 3.00006L0.146619 5.14652C-0.048873 5.34201 -0.048873 5.65801 0.146619 5.8535C0.244115 5.951 0.372109 6 0.500104 6C0.628099 6 0.756094 5.951 0.853589 5.8535L3 3.70705L5.14641 5.8535C5.24391 5.951 5.3719 6 5.4999 6C5.62789 6 5.75589 5.951 5.85338 5.8535C6.04887 5.65801 6.04887 5.34201 5.85338 5.14652L3.70697 3.00006Z"
+                                          fill="#989898"
+                                        />
+                                      </svg>
+                                    </div>
+                                    <div class="common-bg">
+                                      AutoCad
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="6"
+                                        height="6"
+                                        viewBox="0 0 6 6"
+                                        fill="none"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M3.70697 3.00006L5.85338 0.853607C6.04887 0.658111 6.04887 0.342118 5.85338 0.146622C5.65789 -0.048874 5.3419 -0.048874 5.14641 0.146622L3 2.29308L0.853589 0.146622C0.658098 -0.048874 0.342111 -0.048874 0.146619 0.146622C-0.048873 0.342118 -0.048873 0.658111 0.146619 0.853607L2.29303 3.00006L0.146619 5.14652C-0.048873 5.34201 -0.048873 5.65801 0.146619 5.8535C0.244115 5.951 0.372109 6 0.500104 6C0.628099 6 0.756094 5.951 0.853589 5.8535L3 3.70705L5.14641 5.8535C5.24391 5.951 5.3719 6 5.4999 6C5.62789 6 5.75589 5.951 5.85338 5.8535C6.04887 5.65801 6.04887 5.34201 5.85338 5.14652L3.70697 3.00006Z"
+                                          fill="#989898"
+                                        />
+                                      </svg>
+                                    </div>
+                                    <div class="common-bg">
+                                      AutoCad
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="6"
+                                        height="6"
+                                        viewBox="0 0 6 6"
+                                        fill="none"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M3.70697 3.00006L5.85338 0.853607C6.04887 0.658111 6.04887 0.342118 5.85338 0.146622C5.65789 -0.048874 5.3419 -0.048874 5.14641 0.146622L3 2.29308L0.853589 0.146622C0.658098 -0.048874 0.342111 -0.048874 0.146619 0.146622C-0.048873 0.342118 -0.048873 0.658111 0.146619 0.853607L2.29303 3.00006L0.146619 5.14652C-0.048873 5.34201 -0.048873 5.65801 0.146619 5.8535C0.244115 5.951 0.372109 6 0.500104 6C0.628099 6 0.756094 5.951 0.853589 5.8535L3 3.70705L5.14641 5.8535C5.24391 5.951 5.3719 6 5.4999 6C5.62789 6 5.75589 5.951 5.85338 5.8535C6.04887 5.65801 6.04887 5.34201 5.85338 5.14652L3.70697 3.00006Z"
+                                          fill="#989898"
+                                        />
+                                      </svg>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="all-bg second-bg">
+                                  <div class="text-common ss">
+                                    Eğitim ve Sertifika Bilgileri
+                                  </div>
+                                  <div class="edu-row">
+                                    <div class="label">Bölüm</div>
+                                    <div class="common-gray">
+                                      Grafik Tasarımı
+                                    </div>
+                                  </div>
+                                  <div class="edu-row">
+                                    <div class="label">Okulun Adı</div>
+                                    <div class="common-gray">
+                                      Mezuniyet Yılı
+                                    </div>
+                                  </div>
+                                  <div class="all-user">
+                                    <div class="label" style="padding:8px; padding-bottom: 0px;">Mezuniyet Yılı</div>
+                                    <select
+                                      class="common-bg edu-row"
+                                      name="graduation"
+                                      id="graduation"
+                                    >
+                                      <option value="2022">2022</option>
+                                      <option value="2022">2022</option>
+                                      <option value="2022">2022</option>
+                                      <option value="2022">2022</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            <div class="first-input-row save-row">
+                                <div class="left">
+                                  <input type="button" value="Kaydet" class="save-button bottom-s">
+                                </input>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
