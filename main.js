@@ -4,7 +4,7 @@ function increaseValue() {
   if (value < parseInt(input.max)) {
     input.value = value + 1;
   }
-  console.log("selam")
+  console.log("selam");
 }
 
 function decreaseValue() {
@@ -15,35 +15,55 @@ function decreaseValue() {
   }
 }
 
-
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
 var avFiles = document.getElementById("available-files");
 var buyD = document.getElementById("buy-domain");
+var ratingO = document.getElementById("rating-order");
+var experience = document.getElementById("experience-part");
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
-    this.classList.toggle("border-bottom-v2")
-   
+    this.classList.toggle("border-bottom-v2");
+
     var content = this.nextElementSibling;
-    if (content.style.maxHeight){
+    if (content.style.maxHeight) {
       content.style.maxHeight = null;
       avFiles.classList.remove("blockdisplay");
       buyD.classList.remove("flexdisplay");
+      ratingO.classList.remove("flexdisplay");
+      experience.classList.remove("flexdisplay");
     } else {
       avFiles.classList.add("blockdisplay");
       buyD.classList.add("flexdisplay");
+      ratingO.classList.add("flexdisplay");
+      experience.classList.add("flexdisplay");
       content.style.maxHeight = content.scrollHeight + "px";
-    } 
+    }
   });
 }
+
+$(function () {
+  var star = ".star",
+    selected = ".selected";
+
+  $(star).on("click", function () {
+    $(selected).each(function () {
+      $(this).removeClass("selected");
+    });
+    $(this).addClass("selected");
+  });
+});
 
 const slider = document.getElementById("myRange");
 const sliderFill = document.querySelector(".slider-fill");
 
-slider.addEventListener("input", function() {
-  const percent = (slider.value - slider.min) / (slider.max - slider.min) * 100;
-  sliderFill.style.width = percent + "%";
-});
+function openModal() {
+  document.getElementById("myModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
