@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/baglanti.css" />
     <link rel="stylesheet" href="assets/css/kasam.css" />
+    <link rel="stylesheet" href="assets/css/ayarlar.css" />
+    <link rel="stylesheet" href="assets/css/chat.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -44,7 +46,6 @@
           /></a>
         </div>
         <ul class="nav">
-       
           <li class="nav-item menu-items">
             <a class="nav-link" href="index.html">
               <span class="menu-icon">
@@ -61,7 +62,6 @@
               class="nav-link"
               data-toggle="collapse"
               href="muhasebe.html"
-
               aria-expanded="false"
               aria-controls="ui-basic"
             >
@@ -291,204 +291,219 @@
                 <div class="col-12 grid-margin status">
                   <div class="card">
                     <div class="card-body">
-                      <div class="top-headers">
-                        <a href="index.html" class="header-top">Projelerim</a>
-                        <a href="baglanti.html" class="header-top"
-                          >Bağlantılarım</a
-                        >
-                        <a href="kasam.html" class="selected-header header-top">Kasam</a>
-                      </div>
-
                       <div class="all-tables">
                         <div class="table-responsive left-table">
-                          <table class="table">
-                            <thead>
-                              <tr class="first-tr">
-                                <th></th>
-                                <th></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr class="account">
-                                <td>
-                                  <span class="pl-2">Hesabım</span>
-                                  <div class="subname">10.000 TL</div>
-                                </td>
-                                <td class="deposit">
-                                  <img
-                                    src="assets/images/projemhavuzda/wallet.png"
-                                    alt="image"
-                                    class="image"
-                                  />
-                                </td>
-                              </tr>
-                              <tr class="account v2">
-                                <td>
-                                  <span class="pl-2 subpl-2"
-                                    >Aktif İlanlarım</span
-                                  >
-                                  <div class="subname sub-subpl-2">1</div>
-                                </td>
-                                <td class="deposit">
-                                  <img
-                                    src="assets/images/projemhavuzda/aktif.png"
-                                    alt="image"
-                                    class="image"
-                                  />
-                                </td>
-                              </tr>
-                              <tr class="account v2">
-                                <td>
-                                  <span class="pl-2 subpl-2"
-                                    >Başarılı Satışlarım</span
-                                  >
-                                  <div class="subname sub-subpl-2">1</div>
-                                </td>
-                                <td class="deposit">
-                                  <img
-                                    src="assets/images/projemhavuzda/success.png"
-                                    alt="image"
-                                    class="image"
-                                  />
-                                </td>
-                              </tr>
-                              <tr class="account v2">
-                                <td>
-                                  <span class="pl-2 subpl-2"
-                                    >Değenlendirmelerim</span
-                                  >
-                                  <div class="subname sub-subpl-2">4.5/5</div>
-                                </td>
-                                <td class="deposit">
-                                  <img
-                                    src="assets/images/projemhavuzda/star.png"
-                                    alt="image"
-                                    class="image"
-                                  />
-                                </td>
-                              </tr>
+                          <div class="message-title">Mesajlarım</div>
+                          <div class="message-box-v2">
+                            <div class="profile-image-chat">
+                              <img
+                                class="profile"
+                                src="assets/images/projemhavuzda/small-profile.png"
+                                alt="profile"
+                              />
+                              <div class="online-indicator"></div>
+                            </div>
+                            <div class="second-col">
+                              <div class="name">Berkay Sezer</div>
+                              <div class="file-send">
+                                Sana bir dosya gönderdi.
+                              </div>
+                              <div class="file-send image-container">
+                                <img
+                                  class="preview"
+                                  src="assets/images/projemhavuzda/small-profile.png"
+                                  alt="Resim 1"
+                                />
+                                <img
+                                  class="preview"
+                                  src="assets/images/projemhavuzda/small-profile.png"
+                                  alt="Resim 2"
+                                />
 
-                              <tr class="account v2 bottom-button">
-                                <td>  <div class="withdraw-button">Para Çek</div></td>
-                               
-                               
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                            
+                                <span class="plus-6">+6 daha</span>
+                              </div>
+                            </div>
+                            <div class="second-col">
+                              <div class="time">az önce</div>
+                              <div class="mes-count">12</div>
+                            </div>
+                          </div>
+                          <div class="message-box-v2">
+                            <div class="profile-image-chat">
+                              <img
+                                class="profile"
+                                src="assets/images/projemhavuzda/small-profile.png"
+                                alt="profile"
+                              />
+                              <div class="online-indicator"></div>
+                            </div>
+                            <div class="second-col">
+                              <div class="name">Pars Ragıp</div>
+                              <div class="file-send">Lorem İpsum sit</div>
+                            </div>
+                            <div class="second-col">
+                              <div class="time">19.31 PM</div>
+                              <div class="mes-count">365</div>
+                            </div>
+                          </div>
+
+                          <div class="message-box-v2">
+                            <div class="profile-image-chat">
+                              <img
+                                class="profile"
+                                src="assets/images/projemhavuzda/small-profile.png"
+                                alt="profile"
+                              />
+                              <div class="online-indicator"></div>
+                            </div>
+                            <div class="second-col">
+                              <div class="name">Pars Ragıp</div>
+                              <div class="file-send">Lorem İpsum sit dolor</div>
+                            </div>
+                            <div class="second-col">
+                              <div class="time">21.31 PM</div>
+                              <div class="mes-count tick">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M9.86338 17.9999C9.58738 17.9999 9.32338 17.8859 9.13438 17.6849L4.27138 12.5059C3.89238 12.1039 3.91338 11.4709 4.31538 11.0929C4.71838 10.7149 5.35138 10.7349 5.72838 11.1369L9.85338 15.5279L18.2614 6.32587C18.6354 5.91687 19.2674 5.88987 19.6754 6.26187C20.0824 6.63387 20.1104 7.26687 19.7384 7.67387L10.6014 17.6739C10.4144 17.8799 10.1484 17.9979 9.87038 17.9999H9.86338Z"
+                                    fill="#4E73F8"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
                         </div>
 
                         <div class="table-responsive right-table">
-                          <table class="table">
-                            <thead>
-                              <tr class="first-tr">
-                                <th></th>
-                                <th></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
+                          <div class="app-container">
+                            <div class="app-main">
+                              <div class="chat-wrapper">
+                                <div class="message-wrapper">
                                   <img
-                                    src="assets/images/projemhavuzda/deposit.png"
-                                    alt="image"
+                                    class="message-pp"
+                                    src="https://images.unsplash.com/photo-1587080266227-677cc2a4e76e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=934&amp;q=80"
+                                    alt="profile-pic"
                                   />
-                                  <span class="pl-2">Deposit</span>
-                                  <div class="subname">
-                                    13 Apr, 2022 at 3:30 PM
-                                  </div>
-                                </td>
-                                <td class="deposit">$20,129</td>
-                              </tr>
-                              <tr>
-                                <td class="with2">
-                                  <img
-                                    src="assets/images/projemhavuzda/with.png"
-                                    alt="image"
-                                  />
-                                  <span class="pl-2">Cash Withdrawal</span>
-                                  <div class="subname">
-                                    13 Apr, 2022 at 3:30 PM
-                                  </div>
-                                </td>
-                                <td class="with">$20,129</td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <img
-                                    src="assets/images/projemhavuzda/deposit.png"
-                                    alt="image"
-                                  />
-                                  <span class="pl-2">Deposit</span>
-                                  <div class="subname">
-                                    13 Apr, 2022 at 3:30 PM
-                                  </div>
-                                </td>
-                                <td class="deposit">$20,129</td>
-                              </tr>
-                              <tr>
-                                <td class="with2">
-                                  <img
-                                    src="assets/images/projemhavuzda/with.png"
-                                    alt="image"
-                                  />
-                                  <span class="pl-2">Cash Withdrawal</span>
-                                  <div class="subname">
-                                    13 Apr, 2022 at 3:30 PM
-                                  </div>
-                                </td>
-                                <td class="with">$20,129</td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <img
-                                    src="assets/images/projemhavuzda/deposit.png"
-                                    alt="image"
-                                  />
-                                  <span class="pl-2">Deposit</span>
-                                  <div class="subname">
-                                    13 Apr, 2022 at 3:30 PM
-                                  </div>
-                                </td>
-                                <td class="deposit">$20,129</td>
-                              </tr>
-                              <tr>
-                                <td class="with2">
-                                  <img
-                                    src="assets/images/projemhavuzda/with.png"
-                                    alt="image"
-                                  />
-                                  <span class="pl-2">Cash Withdrawal</span>
-                                  <div class="subname">
-                                    13 Apr, 2022 at 3:30 PM
-                                  </div>
-                                </td>
-                                <td class="with">$20,129</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                            
-                        </div>
-                      </div>
+                                  <div class="message-box-wrapper">
+                                    <div class="message-top">
+                                      <div class="name sendbox">
+                                        İbrahim Goktuğ
+                                      </div>
+                                      <div class="revised">
+                                        19:31 • Düzenlendi
+                                      </div>
+                                      <div class="double">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="16"
+                                          height="16"
+                                          viewBox="0 0 16 16"
+                                          fill="none"
+                                        >
+                                          <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M11.0776 4.14173C10.7882 3.91373 10.3696 3.96573 10.1422 4.25573L5.43889 10.2611L3.18622 7.46306C2.95422 7.17706 2.53555 7.13039 2.24889 7.36173C1.96155 7.59306 1.91689 8.01306 2.14689 8.29906L4.92622 11.7511C5.05355 11.9084 5.24422 11.9997 5.44622 11.9997H5.45089C5.65355 11.9984 5.84555 11.9044 5.97089 11.7437L11.1916 5.07706C11.4189 4.78773 11.3682 4.36839 11.0776 4.14173ZM14.4109 4.14173C14.1209 3.91373 13.7029 3.96573 13.4756 4.25573L8.77222 10.2611L8.36955 9.76173L7.52622 10.8397L8.25955 11.7511C8.38689 11.9084 8.57755 11.9997 8.77955 11.9997H8.78422C8.98689 11.9984 9.17889 11.9044 9.30422 11.7437L14.5249 5.07706C14.7522 4.78773 14.7016 4.36839 14.4109 4.14173ZM6.65335 7.62946L5.80869 8.70679L5.48069 8.29946C5.25002 8.01279 5.29469 7.59279 5.58202 7.36146C5.86935 7.13079 6.28869 7.17679 6.51935 7.46346L6.65335 7.62946Z"
+                                            fill="#4E73F8"
+                                          />
+                                        </svg>
+                                      </div>
+                                    </div>
 
-                      <div class="bottom-footer">
-                        <div class="warning-records">
-                          49 kayıttan 1 - 10 arası kayıtlar gösteriliyor.
+                                    <div class="message-box">
+                                      Cari hesap extremizi ekte paylaşıyorum.
+                                      Kolay gelsin, iyi çizimler dilerim.
+                                    </div>
+                                    <div class="file message-box">
+                                      <div class="file-sample">
+                                        <div class="file-image">
+                                          <img
+                                            src="assets/images/projemhavuzda/file.png"
+                                            alt="file sample"
+                                          />
+                                        </div>
+                                        <div class="file-props">
+                                          <div class="file-name">
+                                            ekstre.pdf
+                                          </div>
+                                          <div class="file-time-storage">
+                                            19:31 • 43 MB
+                                          </div>
+                                        </div>
+                                        <div class="file-image">
+                                          <img
+                                            src="assets/images/projemhavuzda/download.svg"
+                                            alt="file sample"
+                                          />
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="message-wrapper">
+                                  <img
+                                    class="message-pp"
+                                    src="https://images.unsplash.com/photo-1587080266227-677cc2a4e76e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=934&amp;q=80"
+                                    alt="profile-pic"
+                                  />
+                                  <div class="message-box-wrapper">
+                                    <div class="message-box">
+                                      Lorem ipsum dolor sit amet, consectetur
+                                      adipiscing elit
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="chat-input-wrapper">
+                                <button class="chat-attachment-btn">
+                                  <img
+                                    src="assets/images/projemhavuzda/cam.png"
+                                    alt="cam"
+                                  />
+                                </button>
+                                <button class="chat-attachment-btn">
+                                  <img
+                                    src="assets/images/projemhavuzda/image.png"
+                                    alt="image"
+                                  />
+                                </button>
+                                <button class="chat-attachment-btn">
+                                  <img
+                                    src="assets/images/projemhavuzda/attach.png"
+                                    alt="attach"
+                                  />
+                                </button>
+                                <div class="input-wrapper">
+                                  <input
+                                    type="text"
+                                    class="chat-input"
+                                    placeholder="Enter your message here"
+                                  />
+                                  <button class="emoji-btn">
+                                    <img
+                                      src="assets/images/projemhavuzda/mic.png"
+                                      alt="mic"
+                                    />
+                                  </button>
+                                  <button class="send-btn emoji-btn">
+                                    <img
+                                      src="assets/images/projemhavuzda/send.png"
+                                      alt="send"
+                                    />
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <ul id="border-pagination">
-                          <li><a class="" href="#">İlk</a></li>
-                          <li><a class="" href="#">Önceki</a></li>
-                          <li><a href="#">1</a></li>
-                          <li><a href="#" class="active">2</a></li>
-                          <li><a href="#">3</a></li>
-                          <li><a href="#">4</a></li>
-                          <li><a href="#">5</a></li>
-                          <li><a href="#">6</a></li>
-                          <li><a href="#">7</a></li>
-                          <li><a href="#">Sonraki</a></li>
-                          <li><a class="" href="#">Son</a></li>
-                        </ul>
                       </div>
                     </div>
                   </div>

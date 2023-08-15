@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Projem Havuzda</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/baglanti.css" />
+    <link rel="stylesheet" href="assets/css/kasam.css" />
+    <link rel="stylesheet" href="assets/css/ayarlar.css" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div
+          class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top"
+        >
+          <a class="sidebar-brand brand-logo" href="index.html"
+            ><img src="assets/images/projemhavuzda/logo.png" alt="logo"
+          /></a>
+          <a class="sidebar-brand brand-logo-mini" href="index.html"
+            ><img src="assets/images/projemhavuzda/logo.png" alt="logo"
+          /></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/anasayfa.png"
+                  alt="anasayfa"
+                />
+              </span>
+              <span class="menu-title">Anasayfa</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="muhasebe.html"
+              aria-expanded="false"
+              aria-controls="ui-basic"
+            >
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/muhasebe.png"
+                  alt="muhasebe"
+                />
+              </span>
+              <span class="menu-title">Muhasebe</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="pages/forms/basic_elements.html">
+              <span class="menu-icon">
+                <img src="assets/images/projemhavuzda/havuz.png" alt="havuz" />
+              </span>
+              <span class="menu-title">Havuz</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="pages/tables/basic-table.html">
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/ilanlar.png"
+                  alt="ilanlar"
+                />
+              </span>
+              <span class="menu-title">İlanlar</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="pages/charts/chartjs.html">
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/paketler.png"
+                  alt="paketler"
+                />
+              </span>
+              <span class="menu-title">Paketler</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="pages/icons/mdi.html">
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/bağlantılar.png"
+                  alt="bağlantılar"
+                />
+              </span>
+              <span class="menu-title">Bağlantılar</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#auth"
+              aria-expanded="false"
+              aria-controls="auth"
+            >
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/profil.png"
+                  alt="profil"
+                />
+              </span>
+              <span class="menu-title">Profil</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="nav nav-bottom">
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="pages/charts/chartjs.html">
+              <span class="menu-icon">
+                <img src="assets/images/projemhavuzda/SSS.png" alt="paketler" />
+              </span>
+              <span class="menu-title">SSS</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="ayarlar.html">
+              <span class="menu-icon">
+                <img
+                  src="assets/images/projemhavuzda/ayarlar.png"
+                  alt="bağlantılar"
+                />
+              </span>
+              <span class="menu-title">Ayarlar</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a
+              class="nav-link"
+              data-toggle="collapse"
+              href="#auth"
+              aria-expanded="false"
+              aria-controls="auth"
+            >
+              <span class="menu-icon">
+                <img src="assets/images/projemhavuzda/çıkış.png" alt="profil" />
+              </span>
+              <span class="menu-title">Çıkış</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div
+            class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center"
+          >
+            <a class="navbar-brand brand-logo-mini" href="index.html">PH</a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                  <i class="fa fa-search icon"></i>
+                  <input
+                    style="color: #989898"
+                    type="text"
+                    class="form-control"
+                    placeholder="Type something for search..."
+                  />
+                </form>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li>
+                <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+              </li>
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a
+                  class="nav-link btn btn-success create-new-button"
+                  id="createbuttonDropdown"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  href="chat.html"
+                  ><img
+                    src="assets/images/projemhavuzda/icon1.svg"
+                    alt="icon 1"
+                /></a>
+              </li>
+
+              <li class="nav-item dropdown d-none d-lg-block">
+                <a
+                  class="nav-link btn btn-success create-new-button"
+                  id="createbuttonDropdown"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                  ><img
+                    src="assets/images/projemhavuzda/icon2.svg"
+                    alt="icon 2"
+                /></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  id="profileDropdown"
+                  href="#"
+                  data-toggle="dropdown"
+                >
+                  <div class="navbar-profile">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">
+                      İbrahim Göktuğ
+                    </p>
+                    <img
+                      class="img-xs rounded-circle d-sm-block navbar-profile-name"
+                      src="assets/images/faces/face15.jpg"
+                      alt=""
+                    />
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                  aria-labelledby="profileDropdown"
+                >
+                  <h6 class="p-3 mb-0">Profile</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                </div>
+              </li>
+            </ul>
+            <button
+              class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+              type="button"
+              data-toggle="offcanvas"
+            >
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row"></div>
+            <div class="row order-status-row">
+              <div class="row">
+                <div class="col-12 grid-margin status">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="top-headers">
+                        <a
+                          href="ayarlar.html"
+                          class="selected-header header-top"
+                          >Genel Ayarlar</a
+                        >
+                        <a href="bankaayarlar.html" class="header-top"
+                          >Banka ve Ödeme Bilgileri</a
+                        >
+                        <a href="guvenlik.html" class="header-top">Güvenlik</a>
+                        <a href="bildirim.html" class="header-top"
+                          >Bildirim Ayarları</a
+                        >
+                      </div>
+
+                      <div class="all-tables">
+                        <div class="table-responsive left-table">
+                          <div class="profile-image">
+                            <img
+                              class="profile"
+                              src="assets/images/projemhavuzda/profile-image.png"
+                              alt="profile"
+                            />
+                          </div>
+                          <div class="change">Değiştir</div>
+                          <div class="name">İbrahim Göktuğ</div>
+                          <div class="subname">@ibrahimgoktug</div>
+                          <div class="form-logo">Form logosu yerleştir</div>
+                          <div class="logo-image-change">
+                            <img
+                              src="assets/images/projemhavuzda/eksre.png"
+                              alt="eksre"
+                            />
+                            ekstre-logo.png
+                          </div>
+                        </div>
+
+                        <div class="table-responsive right-table">
+                          <div class="all-collapsible">
+                            <button class="collapsible">
+                              <div>Portfolyo</div>
+                              <div class="arrow-down-orange">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="7"
+                                  height="5"
+                                  viewBox="0 0 7 5"
+                                  fill="none"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M3.50002 5C3.38602 5 3.27252 4.945 3.18001 4.83427L0.179958 1.26259C-0.0320461 1.01043 -0.0610466 0.55968 0.115957 0.256801C0.29246 -0.046078 0.607466 -0.0867952 0.81997 0.165366L3.50552 3.36274L6.18657 0.280374C6.40157 0.0332134 6.71658 0.0817884 6.88958 0.388953C7.06259 0.696118 7.02859 1.14544 6.81358 1.39331L3.81353 4.84213C3.72202 4.94714 3.61102 5 3.50002 5Z"
+                                    fill="white"
+                                  />
+                                </svg>
+                              </div>
+                            </button>
+                            <div class="content">
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="all-collapsible">
+                            <button class="collapsible">
+                              <div>Belgelerim</div>
+                              <div class="arrow-down-orange">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="7"
+                                  height="5"
+                                  viewBox="0 0 7 5"
+                                  fill="none"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M3.50002 5C3.38602 5 3.27252 4.945 3.18001 4.83427L0.179958 1.26259C-0.0320461 1.01043 -0.0610466 0.55968 0.115957 0.256801C0.29246 -0.046078 0.607466 -0.0867952 0.81997 0.165366L3.50552 3.36274L6.18657 0.280374C6.40157 0.0332134 6.71658 0.0817884 6.88958 0.388953C7.06259 0.696118 7.02859 1.14544 6.81358 1.39331L3.81353 4.84213C3.72202 4.94714 3.61102 5 3.50002 5Z"
+                                    fill="white"
+                                  />
+                                </svg>
+                              </div>
+                            </button>
+                            <div class="content">
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="all-collapsible">
+                            <button class="collapsible">
+                              <div class="header-flex">
+                                <div>Dosya Yönetimi</div>
+                                <div
+                                  class="available-files"
+                                  id="available-files"
+                                >
+                                  15 dosya mevcut
+                                </div>
+                                <div class="buy-domain" id="buy-domain">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="16"
+                                    viewBox="0 0 18 16"
+                                    fill="none"
+                                    style="margin-right: 8px"
+                                  >
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M13.5537 9.77778H6.78212L5.32701 4.44444H16.2203L13.5537 9.77778ZM17.7324 3.50933C17.4062 2.98133 16.8408 2.66667 16.2204 2.66667H4.8426L4.29416 0.655111C4.18838 0.268444 3.83727 0 3.43638 0H1.6586C1.16705 0 0.769714 0.398222 0.769714 0.888889C0.769714 1.37956 1.16705 1.77778 1.6586 1.77778H2.75727L5.24527 10.9004C5.35105 11.2871 5.70216 11.5556 6.10305 11.5556H14.103C14.4399 11.5556 14.7475 11.3653 14.8986 11.064L17.8106 5.23911C18.0888 4.68356 18.0586 4.03733 17.7324 3.50933ZM5.6586 13.3333C4.9226 13.3333 4.32527 13.9298 4.32527 14.6667C4.32527 15.4036 4.9226 16 5.6586 16C6.3946 16 6.99194 15.4036 6.99194 14.6667C6.99194 13.9298 6.3946 13.3333 5.6586 13.3333ZM13.2142 14.6667C13.2142 13.9298 13.8115 13.3333 14.5475 13.3333C15.2835 13.3333 15.8808 13.9298 15.8808 14.6667C15.8808 15.4036 15.2835 16 14.5475 16C13.8115 16 13.2142 15.4036 13.2142 14.6667Z"
+                                      fill="#1D1D1D"
+                                    />
+                                  </svg>
+                                  <div>Alan Satın Al</div>
+                                </div>
+                              </div>
+                              <div class="arrow-down-orange">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="7"
+                                  height="5"
+                                  viewBox="0 0 7 5"
+                                  fill="none"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M3.50002 5C3.38602 5 3.27252 4.945 3.18001 4.83427L0.179958 1.26259C-0.0320461 1.01043 -0.0610466 0.55968 0.115957 0.256801C0.29246 -0.046078 0.607466 -0.0867952 0.81997 0.165366L3.50552 3.36274L6.18657 0.280374C6.40157 0.0332134 6.71658 0.0817884 6.88958 0.388953C7.06259 0.696118 7.02859 1.14544 6.81358 1.39331L3.81353 4.84213C3.72202 4.94714 3.61102 5 3.50002 5Z"
+                                    fill="white"
+                                  />
+                                </svg>
+                              </div>
+                            </button>
+                            <div class="content">
+                              <div class="storage">
+                                <div class="svg-lock">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="17"
+                                    height="16"
+                                    viewBox="0 0 17 16"
+                                    fill="none"
+                                  >
+                                    <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M8.49989 10.6667H12.0554C12.5443 10.6667 12.9443 11.0667 12.9443 11.5556C12.9443 12.0444 12.5443 12.4444 12.0554 12.4444H8.49989C8.011 12.4444 7.611 12.0444 7.611 11.5556C7.611 11.0667 8.011 10.6667 8.49989 10.6667ZM4.05556 11.5556C4.05556 11.0667 4.45556 10.6667 4.94444 10.6667C5.43333 10.6667 5.83333 11.0667 5.83333 11.5556C5.83333 12.0445 5.43333 12.4445 4.94444 12.4445C4.45556 12.4445 4.05556 12.0445 4.05556 11.5556ZM13.8333 14.2222H3.16667C2.67689 14.2222 2.27778 13.824 2.27778 13.3333V8.88889H14.7222V13.3333C14.7222 13.824 14.3231 14.2222 13.8333 14.2222ZM5.24859 2.26933C5.3997 1.96622 5.70459 1.77778 6.04326 1.77778H10.957C11.2957 1.77778 11.6006 1.96622 11.7517 2.26933L14.173 7.11111H2.82726L5.24859 2.26933ZM16.3124 7.41511L13.3418 1.47378C12.8876 0.565333 11.9738 0 10.9569 0H6.04311C5.02622 0 4.11244 0.565333 3.65822 1.47378L0.687556 7.41511C0.564889 7.66044 0.5 7.936 0.5 8.20978V13.3333C0.5 14.8036 1.69644 16 3.16667 16H13.8333C15.3036 16 16.5 14.8036 16.5 13.3333V8.20978C16.5 7.936 16.4351 7.66044 16.3124 7.41511Z"
+                                      fill="white"
+                                    />
+                                  </svg>
+                                  <div class="current">Mevcut Alan</div>
+                                </div>
+
+                                <div class="gb">1GB</div>
+                              </div>
+
+                              <div class="storage">
+                                <div class="slider-fill"></div>
+                                <div class="slider-container">
+                                  <div class="slider-text">
+                                    <div class="slider-label xx">1GB</div>
+                                    <div class="xx">
+                                        <input type="range" />
+                                    </div>
+                                    <div class="slider-label xx">10GB</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="all-collapsible">
+                            <button class="collapsible">
+                              <div>Değerlendirmeler</div>
+                              <div class="arrow-down-orange">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="7"
+                                  height="5"
+                                  viewBox="0 0 7 5"
+                                  fill="none"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M3.50002 5C3.38602 5 3.27252 4.945 3.18001 4.83427L0.179958 1.26259C-0.0320461 1.01043 -0.0610466 0.55968 0.115957 0.256801C0.29246 -0.046078 0.607466 -0.0867952 0.81997 0.165366L3.50552 3.36274L6.18657 0.280374C6.40157 0.0332134 6.71658 0.0817884 6.88958 0.388953C7.06259 0.696118 7.02859 1.14544 6.81358 1.39331L3.81353 4.84213C3.72202 4.94714 3.61102 5 3.50002 5Z"
+                                    fill="white"
+                                  />
+                                </svg>
+                              </div>
+                            </button>
+                            <div class="content">
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
