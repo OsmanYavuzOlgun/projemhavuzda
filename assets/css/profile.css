@@ -81,6 +81,10 @@
 
 .right-table {
   margin-top: 40px;
+  width: 60% !important;
+}
+.left-table {
+  width: 30% !important;
 }
 .left-table {
   border-radius: 20px;
@@ -823,18 +827,18 @@ input[type="range"]:disabled::-moz-range-thumb {
   height: auto;
 }
 
-.port-cont{
+.port-cont {
   flex-direction: column;
 }
 
-.add-port{
+.add-port {
   border-radius: 4px;
   background: #f39200;
   padding: 2px 8px;
   margin: 40px auto;
 }
 
-.add-port-text{
+.add-port-text {
   color: #1d1d1d;
   text-align: center;
   font-size: 14px;
@@ -843,19 +847,32 @@ input[type="range"]:disabled::-moz-range-thumb {
   line-height: 24px;
 }
 
-
-@media only screen and (max-width: 1180px) {
-  .left-table {
-    width: 30% !important;
+@media only screen and (max-width: 1380px) {
+  .first-row {
+    padding: 12px;
   }
-  .right-table {
-    width: 65% !important;
+}
+@media only screen and (max-width: 1280px) {
+  .arrow-down-orange {
+    margin-left: 45px !important;
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .left-table {
+    width: 100% !important;
+  }
+  .right-table {
+    width: 100% !important;
+  }
+}
 @media only screen and (max-width: 768px) {
   .row {
     margin: 0 auto;
+  }
+  .card-body {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   .rating-part-star {
     margin-bottom: 12px;
@@ -863,10 +880,46 @@ input[type="range"]:disabled::-moz-range-thumb {
     margin-top: 12px;
   }
 
-  .left-table {
-    width: 35% !important;
+  .single-p-file {
+    align-items: center;
   }
-  .right-table {
-    width: 60% !important;
+
+  .buy-do-c {
+    flex-wrap: wrap;
+  }
+  .storage {
+    justify-content: center;
+  }
+
+  .portfolio-row {
+    justify-content: center;
+  }
+
+  .profession {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: unset;
+    align-items: center;
+  }
+
+  .header-flex div {
+    margin-left: 0 !important;
+  }
+
+  .header-flex div {
+    margin-top: 12px;
+  }
+  .yy {
+    margin-top: 0 !important;
+  }
+
+  .header-flex {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-flex .belong{
+    margin-left: 12px !important;
   }
 }

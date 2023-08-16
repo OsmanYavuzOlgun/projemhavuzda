@@ -141,6 +141,11 @@
     margin: 0 auto;
   }
 
+  .card-body{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   .all-user {
     margin: 0 auto;
     text-align: center;
