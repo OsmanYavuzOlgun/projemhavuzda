@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="assets/css/baglanti.css" />
     <link rel="stylesheet" href="assets/css/kasam.css" />
     <link rel="stylesheet" href="assets/css/ayarlar.css" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <link rel="stylesheet" href="assets/css/ilanlar.css" />
+    <link rel="stylesheet" href="assets/css/ilandetay.css" />
 
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -62,7 +65,6 @@
               class="nav-link"
               data-toggle="collapse"
               href="muhasebe.html"
-
               aria-expanded="false"
               aria-controls="ui-basic"
             >
@@ -76,7 +78,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link"href="havuz.html">
+            <a class="nav-link" href="havuz.html">
               <span class="menu-icon">
                 <img src="assets/images/projemhavuzda/havuz.png" alt="havuz" />
               </span>
@@ -121,7 +123,6 @@
               class="nav-link"
               data-toggle="collapse"
               href="profile.html"
-
               aria-expanded="false"
               aria-controls="auth"
             >
@@ -293,115 +294,175 @@
                 <div class="col-12 grid-margin status">
                   <div class="card">
                     <div class="card-body">
-                      <div class="top-headers">
-                        <a href="ayarlar.html" class="header-top"
-                          >Genel Ayarlar</a
-                        >
-                        <a
-                          href="bankaayarlar.html"
-                          class="selected-header header-top"
-                          >Banka ve Ödeme Bilgileri</a
-                        >
-                        <a href="guvenlik.html" class="header-top">Güvenlik</a>
-                        <a href="bildirim.html" class="header-top">Bildirim Ayarları</a>
-                      </div>
-
                       <div class="all-tables">
                         <div class="table-responsive right-table">
-                          <div class="text-common">
-                            Banka ve Ödeme Bilgileri
+                          <div class="top-header">
+                            <div class="first-title">
+                              İlanlar > <span class="detail-job">Mimari</span>
+                            </div>
+                            <div><button class="top-right"></button></div>
                           </div>
-                          <div class="information-inputs">
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">İsim</label>
-                                <input
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Berkay"
-                                />
-                              </div>
-                              <div class="right">
-                                <label for="fsurname">Soyisim</label>
-                                <input
-                                  type="text"
-                                  id="fsurname"
-                                  name="fsurname"
-                                  placeholder="Sezer"
-                                />
+                          <div class="advert-detail-all">
+                            <div class="head-title">Mimari Proje Çizimleri</div>
+                            <div class="map-detail">
+                              <img
+                                class="mp-image"
+                                src="assets/images/projemhavuzda/map-detail.png"
+                                alt="map detail"
+                              />
+                            </div>
+                            <div class="portfolio">
+                              <div class="port">Portfolyo</div>
+                              <div class="see-port">
+                                Portfolyosunu Görüntüle
                               </div>
                             </div>
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">T.C. Kimlik No</label>
-                                <input
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="12345678911"
-                                />
-                              </div>
-                              <div class="right">
-                                <label for="fsurname">Cep Telefonu</label>
-                                <input
-                                  type="text"
-                                  id="fsurname"
-                                  name="fsurname"
-                                  placeholder="+90 (553) 441 91 20"
-                                />
-                              </div>
+                            <div class="small-image">
+                              <img
+                                class="s-i"
+                                src="assets/images/projemhavuzda/map.png"
+                                alt=""
+                              />
                             </div>
+                            <div class="about-advert">İş İlanı Hakkında</div>
+                            <div class="about-advert-detail">
+                              Ben 50m2 ve 200 m2 yerleri 350 TL ' ye çizebilirim
+                            </div>
+                          </div>
+                        </div>
 
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">IBAN</label>
-                                <input
-                                  class="all-row"
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="TR900006400000133870190524"
-                                />
+                        <div class="table-responsive left-table">
+                          <div class="profile-image">
+                            <img
+                              class="profile"
+                              src="assets/images/projemhavuzda/profile-image.png"
+                              alt="profile"
+                            />
+                          </div>
+                          <div class="name">İbrahim Göktuğ</div>
+                          <div class="subname">@ibrahimgoktug</div>
+                          <div class="common-bg">
+                            <div class="right-part-conn">
+                              <div class="right-panel-add">
+                                <div class="add-con con-v2">
+                                  <img
+                                    class="add-baglanti"
+                                    src="assets/images/projemhavuzda/add.png"
+                                    alt="add"
+                                  />
+                                  <span class="add-connection"
+                                    >Mesaj Gönder</span
+                                  >
+                                </div>
+                                <div class="add-con">
+                                  <img
+                                    class="add-baglanti"
+                                    src="assets/images/projemhavuzda/add.png"
+                                    alt="add"
+                                  />
+                                  <span class="add-connection">
+                                    Bağlantı Kur</span
+                                  >
+                                </div>
                               </div>
                             </div>
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="exp">Adres</label>
-                                <textarea
-                                  class="textarea v2"
-                                  id="exp"
-                                  name="exp"
-                                  rows="4"
-                                  cols="60"
-                                  placeholder="Lorem ipsum dolor sit amet."
-                                ></textarea>
-                              </div>
-                              <div class="right">
-                                <label for="fsurname">Şehir</label>
-                                <input
-                                  type="text"
-                                  id="fsurname"
-                                  name="fsurname"
-                                  placeholder="İzmir"
+                          </div>
+                          <div class="last-see">
+                            <div class="common-text-v2">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="15"
+                                viewBox="0 0 20 15"
+                                fill="none"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M9.56967 9.46975C8.77826 9.46975 8.13422 8.79675 8.13422 7.96975C8.13422 7.14275 8.77826 6.46975 9.56967 6.46975C10.3611 6.46975 11.0051 7.14275 11.0051 7.96975C11.0051 8.79675 10.3611 9.46975 9.56967 9.46975ZM9.56967 4.46975C7.72273 4.46975 6.2203 6.03975 6.2203 7.96975C6.2203 9.89975 7.72273 11.4697 9.56967 11.4697C11.4166 11.4697 12.919 9.89975 12.919 7.96975C12.919 6.03975 11.4166 4.46975 9.56967 4.46975ZM9.77991 12.9673C5.65923 13.0673 2.97113 9.38435 2.07924 7.96535C3.06108 6.36035 5.53387 3.07435 9.35981 2.97235C13.4642 2.86335 16.1676 6.55535 17.0595 7.97435C16.0786 9.57935 13.6049 12.8653 9.77991 12.9673ZM19.0127 7.47235C18.4021 6.36035 15.0298 0.786347 9.311 0.973347C4.02092 1.11335 0.944282 5.98335 0.127037 7.47235C-0.0423456 7.78035 -0.0423456 8.15935 0.127037 8.46735C0.728966 9.56435 3.98264 14.9693 9.5933 14.9693C9.67178 14.9693 9.75025 14.9683 9.82872 14.9663C15.1178 14.8253 18.1954 9.95635 19.0127 8.46735C19.1811 8.15935 19.1811 7.78035 19.0127 7.47235Z"
+                                  fill="#989898"
                                 />
-                                <label style="margin-top: 12px;" for="fsurname">İlçe</label>
-                                <input
-                                  type="text"
-                                  id="fsurname"
-                                  name="fsurname"
-                                  placeholder="Bornova"
-                                />
-                              </div>
+                              </svg>
+                              <span class="text-v2">Son Görülme</span>
                             </div>
+                            <div class="change">51 dakika önce</div>
+                          </div>
+                          <div class="last-see">
+                            <div class="common-text-v2">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M4.78481 8.46875C4.78481 7.91675 5.21353 7.46875 5.74177 7.46875C6.27001 7.46875 6.69873 7.91675 6.69873 8.46875C6.69873 9.02075 6.27001 9.46875 5.74177 9.46875C5.21353 9.46875 4.78481 9.02075 4.78481 8.46875ZM9.56962 7.46875C9.04138 7.46875 8.61266 7.91675 8.61266 8.46875C8.61266 9.02075 9.04138 9.46875 9.56962 9.46875C10.0979 9.46875 10.5266 9.02075 10.5266 8.46875C10.5266 7.91675 10.0979 7.46875 9.56962 7.46875ZM13.3975 7.46875C12.8692 7.46875 12.4405 7.91675 12.4405 8.46875C12.4405 9.02075 12.8692 9.46875 13.3975 9.46875C13.9257 9.46875 14.3544 9.02075 14.3544 8.46875C14.3544 7.91675 13.9257 7.46875 13.3975 7.46875ZM17.2253 13.4688C17.2253 14.0197 16.7956 14.4688 16.2684 14.4688H6.27193C5.7523 14.4688 5.24128 14.6168 4.79438 14.8968L1.91392 16.7028V3.46875C1.91392 2.91775 2.3436 2.46875 2.87089 2.46875H16.2684C16.7956 2.46875 17.2253 2.91775 17.2253 3.46875V13.4688ZM16.2684 0.46875H2.87089C1.28807 0.46875 0 1.81475 0 3.46875V18.4688C0 18.8288 0.185651 19.1618 0.48518 19.3388C0.631595 19.4258 0.794278 19.4688 0.956962 19.4688C1.1273 19.4688 1.29764 19.4218 1.4498 19.3258L5.77909 16.6117C5.92838 16.5177 6.09872 16.4688 6.27193 16.4688H16.2684C17.8512 16.4688 19.1392 15.1228 19.1392 13.4688V3.46875C19.1392 1.81475 17.8512 0.46875 16.2684 0.46875Z"
+                                  fill="#989898"
+                                />
+                              </svg>
+                              <span class="text-v2">Ort. Yanıt Süresi</span>
+                            </div>
+                            <div class="change">4 dakika</div>
+                          </div>
 
-                            <div class="first-input-row save-row">
-                              <div class="left">
-                                <button class="save-button bottom-s">
-                                  Kaydet
-                                </button>
-                              </div>
+                          <div class="info-box-hakkinda">
+                            <div class="about">
+                              <div class="about-text">Temel Paket</div>
                             </div>
+                            <div class="about profession">
+                              1 adet Post ve Story .jpg veya .png formatında
+                              teslim Stock görsel kullanımı
+                            </div>
+                          </div>
+                          <div class="info-box-hakkinda border-bottom-abs">
+                            <div>
+                              <img
+                                src="assets/images/projemhavuzda/time.png"
+                                alt="time"
+                              />
+                              <span class="teslim">2 günde teslim</span>
+                              <img
+                                src="assets/images/projemhavuzda/revise.svg"
+                                alt="revise"
+                              />
+                              <span class="teslim">1 revizyon hakkı</span>
+                              <img
+                                src="assets/images/projemhavuzda/help.png"
+                                alt="help"
+                              />
+                            </div>
+                          </div>
+                          <div class="info-box-hakkinda">
+                            <div class="elements ele-first">
+                              <img
+                                class="tick"
+                                src="assets/images/projemhavuzda/tick.svg"
+                                alt="tick"
+                              />
+                              3 Platform Sayısı
+                            </div>
+                            <div class="elements">
+                              <img
+                                class="tick"
+                                src="assets/images/projemhavuzda/tick.svg"
+                                alt="tick"
+                              />
+                              Kaynak Dosya
+                            </div>
+                            <div class="elements">
+                              <img
+                                class="tick"
+                                src="assets/images/projemhavuzda/tick.svg"
+                                alt="tick"
+                              />
+                              1 Tasarım Sayısı
+                            </div>
+                          </div>
+                          <div class="continue">
+                            <a class="cont-but"> Devam Et (80 TL)</a>
                           </div>
                         </div>
                       </div>
@@ -415,5 +476,6 @@
       </div>
     </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="main.js"></script>
 </html>
