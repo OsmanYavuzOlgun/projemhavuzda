@@ -1,0 +1,123 @@
+freuqently {
+  font-family: var(--body-font);
+}
+.freuqently .faq-title {
+  text-align: center;
+  margin-bottom: 20px !important;
+  margin-top: 40px !important;
+  font-size: 20px;
+
+  color: #fff;
+}
+.freuqently .faq-title-v2 {
+  text-align: center;
+  margin-bottom: 20px !important;
+  margin-top: 40px !important;
+  font-size: 16px;
+  color: #888888;
+}
+.freuqently .link-contact {
+  text-decoration: underline;
+  color: #2b45bb;
+}
+
+.freuqently .accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: black;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.freuqently .accordion button:hover,
+.freuqently .accordion button:focus {
+  cursor: pointer;
+  color: #2b45bb;
+}
+.freuqently .accordion button:hover::after,
+.freuqently .accordion button:focus::after {
+  cursor: pointer;
+  color: #2b45bb;
+  border: 1px solid #2b45bb;
+}
+.freuqently .accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+}
+.freuqently .accordion button .icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%) rotate(0deg);
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.freuqently .accordion button .icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #757d8a;
+  border-top: 2px solid #757d8a;
+}
+
+.acc-but {
+  display: flex;
+}
+
+.freuqently .accordion button[aria-expanded="true"] {
+  color: blue;
+}
+.freuqently .accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+.freuqently .accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 16em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.freuqently .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.freuqently .accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 1em 0;
+  padding-left: 32px;
+}
+
+.accordion-title {
+  border-radius: 20px;
+  background: #181414;
+  padding: 32px !important;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400 !important;
+  line-height: normal;
+}
+
+.card-body {
+  margin-right: 0 !important;
+}
+.icon {
+}

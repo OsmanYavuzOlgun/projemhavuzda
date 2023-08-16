@@ -19,6 +19,12 @@
     <link rel="stylesheet" href="assets/css/baglanti.css" />
     <link rel="stylesheet" href="assets/css/kasam.css" />
     <link rel="stylesheet" href="assets/css/ayarlar.css" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <link rel="stylesheet" href="assets/css/ilanlar.css" />
+    <link rel="stylesheet" href="assets/css/ilandetay.css" />
+    <link rel="stylesheet" href="assets/css/baglantilarim.css" />
+    <link rel="stylesheet" href="assets/css/finishorder.css" />
+    <link rel="stylesheet" href="assets/css/faq.css" />
 
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -62,7 +68,6 @@
               class="nav-link"
               data-toggle="collapse"
               href="muhasebe.html"
-
               aria-expanded="false"
               aria-controls="ui-basic"
             >
@@ -106,7 +111,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link"  href="baglantisiparis.html">
+            <a class="nav-link" href="baglantisiparis.html">
               <span class="menu-icon">
                 <img
                   src="assets/images/projemhavuzda/bağlantılar.png"
@@ -121,7 +126,6 @@
               class="nav-link"
               data-toggle="collapse"
               href="profile.html"
-
               aria-expanded="false"
               aria-controls="auth"
             >
@@ -287,76 +291,83 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="row"></div>
             <div class="row order-status-row">
               <div class="row">
                 <div class="col-12 grid-margin status">
                   <div class="card">
                     <div class="card-body">
-                      <div class="top-headers">
-                        <a href="ayarlar.html" class="header-top"
-                          >Genel Ayarlar</a
-                        >
-                        <a
-                          href="bankaayarlar.html"
-                          class=" header-top"
-                          >Banka ve Ödeme Bilgileri</a
-                        >
-                        <a href="guvenlik.html" class="selected-header header-top">Güvenlik</a>
-                        <a href="bildirim.html" class="header-top"
-                          >Bildirim Ayarları</a
-                        >
-                      </div>
-
                       <div class="all-tables">
                         <div class="table-responsive right-table">
-                          <div class="text-common">
-                            Şifreni Değiştir
-                          </div>
-                          <div class="information-inputs">
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">Geçerli Şifren</label>
-                                <input
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Mevcut Şifrenizi Giriniz"
-                                />
-                              </div>
-                            </div>
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">Yeni Şifre</label>
-                                <input
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Yeni şifrenizi giriniz"
-                                />
-                              </div>
-                            </div>
+                        </section>
+                        <section class="freuqently section bd-container container-resp" id="faq">
+                          <div class="container">
+                            <h2 class="faq-title">Merak Edilen Sorular</h2>
+                            <h3 class="faq-title-v2">Mimarlar ve Mühendislerimizi bir araya toplamakla kalmadık, bir de sıkça sorulan sorular alanı yaptık!</h2>
 
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">Yeni Şifre</label>
-                                <input
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Yeni şifrenizi tekrarlayınız"
-                                />
-                              </div>
-                            </div>
-
-                            <div class="first-input-row save-row save-security">
-                              <div class="left">
-                                <button class="save-button bottom-s">
-                                  Kaydet
+                            <div class="accordion">
+                              <div class="accordion-item">
+                                <button id="accordion-button-1" aria-expanded="false">
+                                  <span class="accordion-title"
+                                    >Nasıl Tekli Form Oluşturabilirim?</span
+                                  ><span class="icon" aria-hidden="true"></span>
                                 </button>
+                                <div class="accordion-content">
+                                  <p>
+                                    Nasıl Tekli Form Oluşturabilirim?
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <button id="accordion-button-2" aria-expanded="false">
+                                  <span class="accordion-title">Nasıl cari hesap extrelerimi görüntüleyebilirim?</span
+                                  ><span class="icon" aria-hidden="true"></span>
+                                </button>
+                                <div class="accordion-content">
+                                  <p>
+                                    Nasıl cari hesap extrelerimi görüntüleyebilirim?
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <button id="accordion-button-3" aria-expanded="false">
+                                  <span class="accordion-title"
+                                    >Nasıl ilan paylaşabilirim?</span
+                                  ><span class="icon" aria-hidden="true"></span>
+                                </button>
+                                <div class="accordion-content">
+                                  <p>Nasıl ilan paylaşabilirim?</p>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <button id="accordion-button-4" aria-expanded="false">
+                                  <span class="accordion-title"
+                                    >Nasıl havuza proje oluşturabilirim?</span
+                                  ><span class="icon" aria-hidden="true"></span>
+                                </button>
+                                <div class="accordion-content">
+                                  <p>
+                                    Nasıl havuza proje oluşturabilirim?
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <button id="accordion-button-5" aria-expanded="false">
+                                  <span class="accordion-title"
+                                    >S.S.S.</span
+                                  >
+                                  
+                                  <span class="icon" aria-hidden="true"></span>
+                                </button>
+                                <div class="accordion-content">
+                                  <p>
+                                    S.S.S.
+                                  </p>
+                                </div>
                               </div>
                             </div>
                           </div>
+                        </section>
+                          
                         </div>
                       </div>
                     </div>
@@ -369,5 +380,6 @@
       </div>
     </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="main.js"></script>
 </html>

@@ -458,7 +458,6 @@
 .collapsible:hover {
 }
 
-
 .content {
   padding: 0 18px;
   max-height: 0;
@@ -824,6 +823,36 @@ input[type="range"]:disabled::-moz-range-thumb {
   height: auto;
 }
 
+.port-cont{
+  flex-direction: column;
+}
+
+.add-port{
+  border-radius: 4px;
+  background: #f39200;
+  padding: 2px 8px;
+  margin: 40px auto;
+}
+
+.add-port-text{
+  color: #1d1d1d;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+
+@media only screen and (max-width: 1180px) {
+  .left-table {
+    width: 30% !important;
+  }
+  .right-table {
+    width: 65% !important;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .row {
     margin: 0 auto;
@@ -832,5 +861,12 @@ input[type="range"]:disabled::-moz-range-thumb {
     margin-bottom: 12px;
     margin-left: 0;
     margin-top: 12px;
+  }
+
+  .left-table {
+    width: 35% !important;
+  }
+  .right-table {
+    width: 60% !important;
   }
 }

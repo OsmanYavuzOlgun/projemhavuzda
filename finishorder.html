@@ -19,7 +19,11 @@
     <link rel="stylesheet" href="assets/css/baglanti.css" />
     <link rel="stylesheet" href="assets/css/kasam.css" />
     <link rel="stylesheet" href="assets/css/ayarlar.css" />
-
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <link rel="stylesheet" href="assets/css/ilanlar.css" />
+    <link rel="stylesheet" href="assets/css/ilandetay.css" />
+    <link rel="stylesheet" href="assets/css/baglantilarim.css" />
+    <link rel="stylesheet" href="assets/css/finishorder.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -62,7 +66,6 @@
               class="nav-link"
               data-toggle="collapse"
               href="muhasebe.html"
-
               aria-expanded="false"
               aria-controls="ui-basic"
             >
@@ -106,7 +109,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link"  href="baglantisiparis.html">
+            <a class="nav-link" href="baglantisiparis.html">
               <span class="menu-icon">
                 <img
                   src="assets/images/projemhavuzda/bağlantılar.png"
@@ -121,7 +124,6 @@
               class="nav-link"
               data-toggle="collapse"
               href="profile.html"
-
               aria-expanded="false"
               aria-controls="auth"
             >
@@ -287,75 +289,113 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="row"></div>
+            <div class="row white-bg">
+              <div class="comp">Ödeme işlemi tamamlandı</div>
+              <div class="comp-hav">
+                Ödeme şu an havuz hesabında. Ücretini sipariş tamamlandığında
+                alacaksın.
+              </div>
+            </div>
             <div class="row order-status-row">
               <div class="row">
                 <div class="col-12 grid-margin status">
                   <div class="card">
                     <div class="card-body">
-                      <div class="top-headers">
-                        <a href="ayarlar.html" class="header-top"
-                          >Genel Ayarlar</a
-                        >
-                        <a
-                          href="bankaayarlar.html"
-                          class=" header-top"
-                          >Banka ve Ödeme Bilgileri</a
-                        >
-                        <a href="guvenlik.html" class="selected-header header-top">Güvenlik</a>
-                        <a href="bildirim.html" class="header-top"
-                          >Bildirim Ayarları</a
-                        >
-                      </div>
-
                       <div class="all-tables">
                         <div class="table-responsive right-table">
-                          <div class="text-common">
-                            Şifreni Değiştir
+                          <div class="advert-detail-all">
+                            <div class="portfolio">
+                              <div class="port">Sipariş</div>
+                            </div>
+                            <div class="advert-info-row">
+                              <div class="advert-left-part">
+                                <div class="small-image">
+                                  <img
+                                    class="s-i"
+                                    src="assets/images/projemhavuzda/map.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="order-information">
+                                  <div class="about-advert com-mar">
+                                    Şantiye Şefliği yaparım
+                                  </div>
+                                  <div class="about-advert-detail com-mar">
+                                    Kendi şehrinde, Şantiye şefliği
+                                  </div>
+                                  <div class="about-advert-price com-mar">
+                                    5000 TL
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="advert-right-part">
+                                <div class="one-advert">
+                                    <div class="top-part">Alıcı</div>
+                                    <div class="bottom-part">
+                                      <div class="small-image">
+                                        <img
+                                          class="small-image"
+                                          src="assets/images/projemhavuzda/small-profile.png"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="info">
+                                        <div class="name">İbrahim Göktuğ</div>
+                                        <div class="job">İnşaat Müh.</div>
+                                      </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="second-advert">
+                                    <div class="top-part">Sipariş Tarihi</div>
+                                    <div class="bottom-part">
+                                      <div class="small-image">
+                                        <img
+                                          class="small-image"
+                                          src="assets/images/projemhavuzda/market.svg"
+                                          alt=""
+                                        />
+                                      </div>
+                                      <div class="info">
+                                        <div class="name">19 Mart 2023</div>
+                                        <div class="job">16:49</div>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="information-inputs">
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">Geçerli Şifren</label>
-                                <input
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Mevcut Şifrenizi Giriniz"
-                                />
+                          <div class="advert-detail-all all-add">
+                            <div class="portfolio subport deyat">
+                              <div class="port aaa">Detaylar</div>
+                              <div class="subports aaaa">Adet</div>
+                              <div class="subports aaaa">Süre</div>
+                              <div class="subports">Tutar</div>
+                            </div>
+                            <div class="advert-info-row not-col">
+                              <div class="advert-left-part deta">
+                                Deta
+                              </div>
+                              <div class="advert-left-part">
+                                <div class="order-information">
+                                 1
+                                </div>
+                              </div>
+                              <div class="advert-left-part">
+                                <div class="order-information">
+                                    14 Gün
+                                </div>
+                              </div>
+                              <div class="advert-left-part">
+                                <div class="order-information">
+                                    5000 TL
+                                </div>
                               </div>
                             </div>
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">Yeni Şifre</label>
-                                <input
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Yeni şifrenizi giriniz"
-                                />
-                              </div>
-                            </div>
-
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">Yeni Şifre</label>
-                                <input
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Yeni şifrenizi tekrarlayınız"
-                                />
-                              </div>
-                            </div>
-
-                            <div class="first-input-row save-row save-security">
-                              <div class="left">
-                                <button class="save-button bottom-s">
-                                  Kaydet
-                                </button>
-                              </div>
-                            </div>
+                          </div>
+                          <div class="buttons">
+                            <div class="black">Siparişi İptal Et</div>
+                            <div class="blue">Siparişi Tamamladım</div>
                           </div>
                         </div>
                       </div>
@@ -369,5 +409,6 @@
       </div>
     </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="main.js"></script>
 </html>

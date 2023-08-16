@@ -19,7 +19,10 @@
     <link rel="stylesheet" href="assets/css/baglanti.css" />
     <link rel="stylesheet" href="assets/css/kasam.css" />
     <link rel="stylesheet" href="assets/css/ayarlar.css" />
-
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <link rel="stylesheet" href="assets/css/ilanlar.css" />
+    <link rel="stylesheet" href="assets/css/ilandetay.css" />
+    <link rel="stylesheet" href="assets/css/baglantilarim.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -62,7 +65,6 @@
               class="nav-link"
               data-toggle="collapse"
               href="muhasebe.html"
-
               aria-expanded="false"
               aria-controls="ui-basic"
             >
@@ -106,7 +108,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link"  href="baglantisiparis.html">
+            <a class="nav-link" href="baglantisiparis.html">
               <span class="menu-icon">
                 <img
                   src="assets/images/projemhavuzda/bağlantılar.png"
@@ -121,7 +123,6 @@
               class="nav-link"
               data-toggle="collapse"
               href="profile.html"
-
               aria-expanded="false"
               aria-controls="auth"
             >
@@ -293,68 +294,56 @@
                 <div class="col-12 grid-margin status">
                   <div class="card">
                     <div class="card-body">
-                      <div class="top-headers">
-                        <a href="ayarlar.html" class="header-top"
-                          >Genel Ayarlar</a
-                        >
-                        <a
-                          href="bankaayarlar.html"
-                          class=" header-top"
-                          >Banka ve Ödeme Bilgileri</a
-                        >
-                        <a href="guvenlik.html" class="selected-header header-top">Güvenlik</a>
-                        <a href="bildirim.html" class="header-top"
-                          >Bildirim Ayarları</a
-                        >
-                      </div>
-
                       <div class="all-tables">
                         <div class="table-responsive right-table">
-                          <div class="text-common">
-                            Şifreni Değiştir
+                          <div class="advert-detail-all">
+                            <div class="portfolio">
+                              <div class="port">Siparişi Tamamla</div>
+                            </div>
+                            <div class="advert-info-row">
+                              <div class="small-image">
+                                <img
+                                  class="s-i"
+                                  src="assets/images/projemhavuzda/map.png"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="order-information">
+                                <div class="about-advert com-mar">
+                                  Şantiye Şefliği yaparım
+                                </div>
+                                <div class="about-advert-detail com-mar">
+                                  Kendi şehrinde, Şantiye şefliği
+                                </div>
+                                <div class="about-advert-price com-mar">
+                                  5000 TL
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="information-inputs">
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">Geçerli Şifren</label>
-                                <input
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Mevcut Şifrenizi Giriniz"
-                                />
-                              </div>
-                            </div>
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">Yeni Şifre</label>
-                                <input
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Yeni şifrenizi giriniz"
-                                />
-                              </div>
-                            </div>
+                        </div>
 
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">Yeni Şifre</label>
-                                <input
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Yeni şifrenizi tekrarlayınız"
-                                />
+                        <div class="table-responsive left-table">
+                          <div class="advert-detail-all all-col">
+                            <div class="portfolio">
+                              <div class="port no-bg sum">Özet</div>
+                            </div>
+                            <div class="advert-info-row col-wise">
+                              <div class="total-price">
+                                <div class="total">Toplam Fiyat</div>
+                                <div class="price">80 TL</div>
+                              </div>
+
+                              <div class="total-price">
+                                <div class="total">Toplam Teslim Süresi</div>
+                                <div class="price">2 Gün</div>
                               </div>
                             </div>
-
-                            <div class="first-input-row save-row save-security">
-                              <div class="left">
-                                <button class="save-button bottom-s">
-                                  Kaydet
-                                </button>
-                              </div>
+                            <div class="finish-order">
+                              <a class="finish-order" href="finishorder.html">Siparişi Tamamla</a>
+                            </div>
+                            <div class="finish">
+                              Ödeme sayfasına yönlendirileceksiniz.
                             </div>
                           </div>
                         </div>
@@ -369,5 +358,6 @@
       </div>
     </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="main.js"></script>
 </html>

@@ -1,0 +1,282 @@
+.all-tables {
+  justify-content: center;
+}
+
+.top-headers {
+  margin: 24px auto;
+  display: flex;
+}
+
+.header-top {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.card-body {
+  margin: 0 auto;
+}
+
+.right-table {
+  width: 100%;
+}
+.add-image {
+  margin-top: 16px;
+}
+
+.file-types {
+  color: #989898;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 13px;
+}
+.wrapper-add {
+  border-radius: 8px;
+  border: 1px dashed #282828;
+  background: #1d1d1d;
+  width: 192px;
+  height: 158px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.add-image-files {
+  max-width: 192px;
+  max-height: 158px;
+  width: 100%;
+}
+
+.all-images {
+  display: flex;
+}
+
+.add-image {
+  margin-left: 12px;
+}
+
+.add-file {
+  padding: 6px 22px;
+  border-radius: 8px;
+  border: 1px solid #282828;
+  color: #989898;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.row-col-first {
+  flex-direction: column;
+}
+label {
+  margin-left: 14px !important;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+}
+.label {
+  margin-left: 14px !important;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.sss {
+  width: 213px !important;
+}
+
+.input-group-cat {
+  display: flex;
+}
+
+.common-bg {
+  border-radius: 8px !important;
+  border: 1px solid #282828 !important;
+  background: #1d1d1d !important;
+  padding: 8px 16px !important;
+  width: 326px;
+  height: 52px;
+  margin-left: 12px;
+}
+
+.left-row {
+  flex-direction: row !important;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block; /* Make sure the container adjusts to content */
+}
+
+.header {
+  position: absolute;
+  top: 39px;
+  left: 11px;
+  width: 100%;
+  background-color: #f43c3c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  max-height: 14px;
+  width: 189px;
+  height: 26px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bottom-row {
+  width: 326px !important;
+  min-width: unset !important;
+}
+
+.save-row {
+  max-width: 682px;
+}
+
+.width-set {
+  width: 213px;
+  margin-left: 10px;
+}
+.width-set:first-child {
+  margin-left: 0;
+}
+
+.information-inputs input {
+  width: 672px;
+}
+
+.all-row {
+  min-width: unset;
+}
+
+.header-icons img {
+  width: 10px;
+  height: 10px;
+}
+
+.pencil {
+  margin-left: 14px;
+}
+
+.header-text {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.header-icons .fa-icon {
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+.add-image {
+  margin-top: 40px; /* Adjust margin as needed */
+}
+
+.add-image-files {
+  width: 100%;
+  height: auto;
+}
+
+.first-input-row {
+  display: flex;
+  justify-content: center;
+}
+
+.width-set {
+  /*   flex: 1 1 calc(33.33% - 10px); */
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+  .all-images {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .header-top {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .first-input-row .left {
+    display: flex;
+    flex-direction: column !important;
+    margin: 16px auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  input,
+  select {
+    width: 100% !important;
+    max-width: 200px !important;
+  }
+  .table-responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .top-headers {
+    margin: 52px auto;
+    width: max-content;
+  }
+  .left {
+    flex-direction: column; /* Stack elements vertically */
+  }
+  .left {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  label,
+  .width-set {
+    margin-left: 0 !important;
+  }
+
+  .first-input-row {
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .text-common {
+    text-align: center;
+  }
+  label {
+    text-align: center;
+  }
+  .width-set {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .input-group-cat {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 620px) {
+  .width-set {
+    /*   flex-basis: calc(50% - 10px); /* Two elements per row, with spacing */
+  }
+}

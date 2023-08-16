@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/baglanti.css" />
     <link rel="stylesheet" href="assets/css/kasam.css" />
     <link rel="stylesheet" href="assets/css/ayarlar.css" />
+    <link rel="stylesheet" href="assets/css/addilan.css" />
 
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -62,7 +63,6 @@
               class="nav-link"
               data-toggle="collapse"
               href="muhasebe.html"
-
               aria-expanded="false"
               aria-controls="ui-basic"
             >
@@ -106,7 +106,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link"  href="baglantisiparis.html">
+            <a class="nav-link" href="pages/icons/mdi.html">
               <span class="menu-icon">
                 <img
                   src="assets/images/projemhavuzda/bağlantılar.png"
@@ -121,7 +121,6 @@
               class="nav-link"
               data-toggle="collapse"
               href="profile.html"
-
               aria-expanded="false"
               aria-controls="auth"
             >
@@ -294,65 +293,186 @@
                   <div class="card">
                     <div class="card-body">
                       <div class="top-headers">
-                        <a href="ayarlar.html" class="header-top"
-                          >Genel Ayarlar</a
-                        >
-                        <a
-                          href="bankaayarlar.html"
-                          class=" header-top"
-                          >Banka ve Ödeme Bilgileri</a
-                        >
-                        <a href="guvenlik.html" class="selected-header header-top">Güvenlik</a>
-                        <a href="bildirim.html" class="header-top"
-                          >Bildirim Ayarları</a
-                        >
+                        <div class="header-top">İlan Ekle</div>
                       </div>
 
                       <div class="all-tables">
                         <div class="table-responsive right-table">
-                          <div class="text-common">
-                            Şifreni Değiştir
-                          </div>
+                          <div class="text-common">Kategori Seç</div>
                           <div class="information-inputs">
                             <div class="first-input-row">
                               <div class="left">
-                                <label for="fname">Geçerli Şifren</label>
-                                <input
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Mevcut Şifrenizi Giriniz"
-                                />
+                                <label for="fname">Kategori</label>
+                                <div class="input-group-cat">
+                                  <select
+                                    class="common-bg"
+                                    name="elektrik"
+                                    id="elektrik"
+                                  >
+                                    <option value="kullanıcı">Elektrik</option>
+                                    <option value="kullanıcı">Elektrik</option>
+                                    <option value="kullanıcı">Elektrik</option>
+                                    <option value="kullanıcı">Elektrik</option>
+                                  </select>
+                                  <select
+                                    class="common-bg"
+                                    name="elektrik projesi"
+                                    id="elektrik projesi"
+                                  >
+                                    <option value="kullanıcı">
+                                      Elektrik projesi
+                                    </option>
+                                    <option value="kullanıcı">
+                                      Elektrik projesi
+                                    </option>
+                                    <option value="kullanıcı">
+                                      Elektrik projesi
+                                    </option>
+                                    <option value="kullanıcı">
+                                      Elektrik projesi
+                                    </option>
+                                  </select>
+                                </div>
                               </div>
                             </div>
                             <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">Yeni Şifre</label>
-                                <input
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Yeni şifrenizi giriniz"
-                                />
+                              <div class="left left-row">
+                                <div class="width-set">
+                                  <label for="fname">Proje Sayısı</label>
+                                  <select class="common-bg sss" name="1" id="1">
+                                    <option value="kullanıcı">1</option>
+                                    <option value="kullanıcı">1</option>
+                                    <option value="kullanıcı">1</option>
+                                    <option value="kullanıcı">1</option>
+                                  </select>
+                                </div>
+                                <div class="width-set">
+                                  <label for="fname">Platform Sayısı</label>
+                                  <select class="common-bg sss" name="1" id="1">
+                                    <option value="kullanıcı">1</option>
+                                    <option value="kullanıcı">1</option>
+                                    <option value="kullanıcı">1</option>
+                                    <option value="kullanıcı">1</option>
+                                  </select>
+                                </div>
+                                <div class="width-set">
+                                  <label for="fname">Revize Sayısı</label>
+                                  <select class="common-bg sss" name="1" id="1">
+                                    <option value="kullanıcı">1</option>
+                                    <option value="kullanıcı">1</option>
+                                    <option value="kullanıcı">1</option>
+                                    <option value="kullanıcı">1</option>
+                                  </select>
+                                </div>
                               </div>
                             </div>
 
                             <div class="first-input-row">
                               <div class="left">
-                                <label for="fname">Yeni Şifre</label>
+                                <label for="fname">İlan Başlığı</label>
                                 <input
+                                  class="all-row common-bg"
                                   type="text"
                                   id="fname"
                                   name="fname"
-                                  placeholder="Yeni şifrenizi tekrarlayınız"
+                                  placeholder="Elektrik Projelerinizi çizerim"
+                                />
+                              </div>
+                            </div>
+                            <div class="first-input-row">
+                              <div class="left">
+                                <label for="fname">İş Detayları</label>
+                                <input
+                                  class="all-row common-bg"
+                                  type="text"
+                                  id="fname"
+                                  name="fname"
+                                  placeholder="Elektrik ruhsat projelerinizi mimarinize uygun şekilde çiziyorum"
                                 />
                               </div>
                             </div>
 
-                            <div class="first-input-row save-row save-security">
+                            <div class="first-input-row row-col-first">
+                              <div class="left">
+                                <div class="label">Galeri</div>
+                              </div>
+                              <div class="all-images">
+                                <div class="add-image">
+                                  <div class="wrapper-add">
+                                    <a class="add-file">
+                                      <img
+                                        src="assets/images/projemhavuzda/attach.png"
+                                        alt="attach"
+                                      />
+                                      Dosya Ekle</a
+                                    >
+                                    <div class="file-types">
+                                      JPG, PNG, MP4, DWG
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="image-container">
+                                  <div class="header">
+                                    <div class="header-text">Kapak Görseli</div>
+                                    <div class="header-icons">
+                                      <img
+                                        src="assets/images/projemhavuzda/delete.svg"
+                                        alt="delete"
+                                      />
+                                      <img
+                                        class="pencil"
+                                        src="assets/images/projemhavuzda/pencil.svg"
+                                        alt="pencil"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="add-image">
+                                    <img
+                                      src="assets/images/projemhavuzda/map.png"
+                                      alt="attach"
+                                      class="add-image-files"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="image-container">
+                                  <div class="add-image">
+                                    <img
+                                      src="assets/images/projemhavuzda/map.png"
+                                      alt="attach"
+                                      class="add-image-files"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="first-input-row">
+                              <div class="left">
+                                <label for="fname">Fiyat</label>
+                                <input
+                                  class="all-row common-bg bottom-row"
+                                  type="text"
+                                  id="fname"
+                                  name="fname"
+                                  placeholder="500 TL"
+                                />
+                              </div>
+                              <div class="left">
+                                <label for="fname">Kazanacağınız Miktar</label>
+                                <input
+                                  class="common-bg all-row bottom-row"
+                                  type="text"
+                                  id="fname"
+                                  name="fname"
+                                  placeholder="500 TL"
+                                />
+                              </div>
+                            </div>
+
+                            <div class="first-input-row save-row">
                               <div class="left">
                                 <button class="save-button bottom-s">
-                                  Kaydet
+                                  İlanı Yayınla
                                 </button>
                               </div>
                             </div>

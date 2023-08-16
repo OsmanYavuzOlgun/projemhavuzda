@@ -1,0 +1,188 @@
+.port {
+  border-radius: 8px;
+  background: #161616;
+  padding: 12px;
+  width: 100%;
+}
+
+.advert-info-row {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+  margin-left: 8px;
+}
+
+.left-table {
+  margin-left: 10px;
+}
+
+.finish {
+  color: #989898;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+.s-i {
+  width: 170px;
+  height: 94px;
+}
+
+.finish-order {
+  border-radius: 8px;
+  background: #4169fe;
+  padding: 12px;
+  color: var(--white, #fff);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  width: max-content;
+  margin: 32px auto;
+}
+.sum {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.total {
+  color: #989898;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.price {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.all-col {
+  width: 100%;
+}
+.col-wise {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 12px;
+}
+
+.order-information {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.com-mar {
+  margin-bottom: 8px;
+}
+
+.no-bg {
+  background-color: transparent !important;
+}
+
+.about-advert {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.about-advert-detail {
+  color: #989898;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about-advert-price {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+@media (max-width: 1912px) {
+  .right-panel-add {
+    flex-direction: column;
+  }
+  .add-con {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .advert-info-row {
+    flex-direction: column;
+  }
+  .right-table {
+    width: 50% !important;
+  }
+  .left-table {
+    width: 50% !important;
+  }
+}
+@media (max-width: 991px) {
+  .right-table {
+    width: 100% !important;
+    margin-top: 69px;
+  }
+  .left-table {
+    width: 100% !important;
+    margin: 20px auto;
+  }
+  .total {
+    max-width: 134px;
+  }
+}
+@media (max-width: 512px) {
+  .total-price {
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .advert-detail-all {
+    margin: 0 auto;
+  }
+  .no-bg {
+    text-align: center;
+  }
+  .content-wrapper {
+    padding: 0;
+  }
+  .advert-info-row {
+    margin-left: 0;
+    text-align: center;
+  }
+  .finish-order {
+    width: 100%;
+  }
+  .order-information {
+    margin-left: 0;
+  }
+  .port {
+    text-align: center;
+  }
+}
