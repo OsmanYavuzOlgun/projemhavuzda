@@ -94,6 +94,10 @@ thead {
   padding-left: 0.5rem !important;
 }
 
+.spec-max {
+  max-width: 10px;
+}
+
 .all-tables {
   display: flex;
   @media (max-width: 991px) {
@@ -101,9 +105,9 @@ thead {
   }
 }
 
-.with2{
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+.with2 {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .left-table {
@@ -129,7 +133,6 @@ thead {
     margin: 0 auto;
     max-width: fit-content;
     width: 100%;
-
   }
 }
 

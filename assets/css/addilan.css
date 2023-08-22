@@ -22,6 +22,10 @@
 .right-table {
   width: 100%;
 }
+
+ .right-table {
+  overflow: hidden !important;
+}
 .add-image {
   margin-top: 16px;
 }
@@ -218,6 +222,10 @@ label {
   .header-top {
     text-align: center;
     margin: 0 auto;
+  }
+
+  .right-table {
+    overflow-x: auto;
   }
 
   .first-input-row .left {

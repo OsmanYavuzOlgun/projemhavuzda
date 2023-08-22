@@ -61,7 +61,6 @@
           <li class="nav-item menu-items">
             <a
               class="nav-link"
-              data-toggle="collapse"
               href="muhasebe.html"
               aria-expanded="false"
               aria-controls="ui-basic"
@@ -106,7 +105,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link"  href="baglantisiparis.html">
+            <a class="nav-link" href="baglantisiparis.html">
               <span class="menu-icon">
                 <img
                   src="assets/images/projemhavuzda/bağlantılar.png"
@@ -119,7 +118,6 @@
           <li class="nav-item menu-items">
             <a
               class="nav-link"
-              data-toggle="collapse"
               href="profile.html"
               aria-expanded="false"
               aria-controls="auth"
@@ -202,7 +200,6 @@
                 <a
                   class="nav-link btn btn-success create-new-button"
                   id="createbuttonDropdown"
-                  data-toggle="dropdown"
                   aria-expanded="false"
                   href="chat.html"
                   ><img
@@ -211,19 +208,18 @@
                 /></a>
               </li>
 
-             li class="nav-item dropdown d-none d-lg-block">
+              <li class="nav-item dropdown d-none d-lg-block">
                 <a
                   class="nav-link btn btn-success create-new-button"
                   id="createbuttonDropdown"
                   data-toggle="dropdown"
                   aria-expanded="false"
-                  href="#
+                  href="#"
                   ><img
                     src="assets/images/projemhavuzda/language.svg"
                     alt="icon 1"
                 /></a>
               </li>
-
 
               <li class="nav-item dropdown d-none d-lg-block">
                 <a
@@ -499,13 +495,13 @@
                                     yaparım
                                   </div>
                                 </div>
-                             
                               </div>
                               <div class="add-port">
-                                <a class="add-port-text" href="addport.html"> Portfolyo ekleyin </a>
+                                <a class="add-port-text" href="addport.html">
+                                  Portfolyo ekleyin
+                                </a>
                               </div>
                             </div>
-                            
                           </div>
 
                           <div class="all-collapsible">
@@ -838,7 +834,7 @@
                                 >
                                   15 dosya mevcut
                                 </div>
-                                <div class="buy-domain " id="buy-domain">
+                                <div class="buy-domain" id="buy-domain">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="18"
@@ -856,7 +852,7 @@
                                   </svg>
                                   <div class="yy">Alan Satın Al</div>
                                 </div>
-                                <div class="arrow-down-orange ">
+                                <div class="arrow-down-orange">
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="7"
@@ -897,18 +893,25 @@
                                 <div class="gb">1GB</div>
                               </div>
 
+                              
+
                               <div class="storage">
-                                <div class="slider-fill"></div>
+                                <div class="slider-fill" style="width: 50%;"></div>
                                 <div class="slider-container">
                                   <div class="slider-text">
                                     <div class="slider-label xx">1GB</div>
                                     <div class="xx">
-                                      <input type="range" />
+                                      <!-- Input range with current storage value -->
+                                      <input type="range" id="storage-range" class="slider" min="1" max="10" value="5" />
                                     </div>
                                     <div class="slider-label xx">10GB</div>
                                   </div>
+                                  <!-- Display current storage value -->
+                                  <div id="storage-value" class="slider-value">5GB</div>
                                 </div>
                               </div>
+
+
                             </div>
                           </div>
                           <div class="all-collapsible">

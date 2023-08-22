@@ -59,6 +59,8 @@
   background: #282828;
   box-shadow: 0px 0px 7px -2px rgba(27, 46, 94, 0.05);
   margin-bottom: 20px;
+  width: 100%;
+  max-width: unset;
 }
 
 .name {
@@ -78,7 +80,7 @@
   background: #f39200;
   color: #ffffff;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   padding: 8px;

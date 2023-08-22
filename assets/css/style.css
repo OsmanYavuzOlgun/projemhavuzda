@@ -30916,12 +30916,16 @@ div.tagsinput span.tag a {
   flex-direction: column;
 }
 
+
+
+
 @media (max-width: 991px) {
   .main-panel {
     margin-left: 0;
     width: 100%;
   }
 }
+
 
 
 .content-wrapper {

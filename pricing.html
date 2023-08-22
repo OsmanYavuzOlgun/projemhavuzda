@@ -60,7 +60,6 @@
           <li class="nav-item menu-items">
             <a
               class="nav-link"
-              data-toggle="collapse"
               href="muhasebe.html"
               aria-expanded="false"
               aria-controls="ui-basic"
@@ -118,7 +117,6 @@
           <li class="nav-item menu-items">
             <a
               class="nav-link"
-              data-toggle="collapse"
               href="profile.html"
 
               aria-expanded="false"
@@ -202,10 +200,8 @@
                 <a
                   class="nav-link btn btn-success create-new-button"
                   id="createbuttonDropdown"
-                  data-toggle="dropdown"
                   aria-expanded="false"
                   href="chat.html"
-                  ><img
                     src="assets/images/projemhavuzda/icon1.svg"
                     alt="icon 1"
                 /></a>
@@ -298,25 +294,75 @@
               <div class="no" style="text-align: center">
                 No contracts, no surprise fees.
               </div>
+
               <div style="text-align: center" class="fieldset">
-                <input
-                  type="radio"
-                  name="duration-1"
-                  value="monthly"
-                  id="monthly-1"
-                />
-                <label class="label" for="monthly-1">Aylık</label>
-                <input
-                  type="radio"
-                  name="duration-1"
-                  value="yearly"
-                  id="yearly-1"
-                />
-                <label class="label yil" for="yearly-1">Yıllık</label>
+                <button class="label selected-label" id="aylik-btn">Aylık</button>
+                <button class="label" id="yillik-btn">Yıllık</button>
               </div>
 
-              <div class="pricing-cards-all">
-                <div class="pricing-card basic">
+              <!-- Aylık section -->
+              <div id="aylik" class="pricing-card basic">
+                <div class="single-price">
+                  <div class="heading">
+                    <h4 class="header-title">Lite</h4>
+                    <p class="yillik">1 Aylık pakettir</p>
+                  </div>
+                  <p class="price">
+                    160₺
+                    <span class="month-text">/Ay</span>
+                  </p>
+                  <ul class="features">
+                    <li><i class="fa-solid fa-check"></i> Manuel muhasebe sistemi</li>
+                    <li><i class="fa-solid fa-check"></i> Teklif formu oluştur</li>
+                    <li><i class="fa-solid fa-check"></i> Extre formu oluştur</li>
+                    <li><i class="fa-solid fa-check"></i> Hızlı dosya yükle ve gizle</li>
+                    <li><i class="fa-solid fa-check"></i> Karşılıklı hızlı ön muhasebe</li>
+                  </ul>
+                  <button class="cta-btn">Plan Seç</button>
+                </div>
+                
+                <div class="single-price">
+                  <div class="heading">
+                    <h4 class="header-title">Lite</h4>
+                    <p class="yillik">1 Aylık pakettir</p>
+                  </div>
+                  <p class="price">
+                    160₺
+                    <span class="month-text">/Ay</span>
+                  </p>
+                  <ul class="features">
+                    <li><i class="fa-solid fa-check"></i> Manuel muhasebe sistemi</li>
+                    <li><i class="fa-solid fa-check"></i> Teklif formu oluştur</li>
+                    <li><i class="fa-solid fa-check"></i> Extre formu oluştur</li>
+                    <li><i class="fa-solid fa-check"></i> Hızlı dosya yükle ve gizle</li>
+                    <li><i class="fa-solid fa-check"></i> Karşılıklı hızlı ön muhasebe</li>
+                  </ul>
+                  <button class="cta-btn">Plan Seç</button>
+                </div>
+
+                <div class="single-price">
+                  <div class="heading">
+                    <h4 class="header-title">Lite</h4>
+                    <p class="yillik">1 Aylık pakettir</p>
+                  </div>
+                  <p class="price">
+                    160₺
+                    <span class="month-text">/Ay</span>
+                  </p>
+                  <ul class="features">
+                    <li><i class="fa-solid fa-check"></i> Manuel muhasebe sistemi</li>
+                    <li><i class="fa-solid fa-check"></i> Teklif formu oluştur</li>
+                    <li><i class="fa-solid fa-check"></i> Extre formu oluştur</li>
+                    <li><i class="fa-solid fa-check"></i> Hızlı dosya yükle ve gizle</li>
+                    <li><i class="fa-solid fa-check"></i> Karşılıklı hızlı ön muhasebe</li>
+                  </ul>
+                  <button class="cta-btn">Plan Seç</button>
+                </div>
+              </div>
+    
+              <!-- Yıllık section -->
+              <div id="yillik" class="pricing-card standard" style="display: none;">
+                <div class="single-price">
                   <div class="heading">
                     <h4 class="header-title">Lite</h4>
                     <p class="yillik">1 Yıllık pakettir</p>
@@ -326,97 +372,54 @@
                     <span class="month-text">/Ay</span>
                   </p>
                   <ul class="features">
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Manuel muhasebe sistemi
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Teklif formu oluştur
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Extre formu oluştur
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Hızlı dosya yükle ve gizle
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Karşılıklı hızlı ön muhasebe
-                    </li>
+                    <li><i class="fa-solid fa-check"></i> Manuel muhasebe sistemi</li>
+                    <li><i class="fa-solid fa-check"></i> Teklif formu oluştur</li>
+                    <li><i class="fa-solid fa-check"></i> Extre formu oluştur</li>
+                    <li><i class="fa-solid fa-check"></i> Hızlı dosya yükle ve gizle</li>
+                    <li><i class="fa-solid fa-check"></i> Karşılıklı hızlı ön muhasebe</li>
+                  </ul>
+                  <button class="cta-btn">Plan Seç</button>
+                </div>
+                
+                <div class="single-price">
+                  <div class="heading">
+                    <h4 class="header-title">Lite</h4>
+                    <p class="yillik">1 Yıllık pakettir</p>
+                  </div>
+                  <p class="price">
+                    160₺
+                    <span class="month-text">/Ay</span>
+                  </p>
+                  <ul class="features">
+                    <li><i class="fa-solid fa-check"></i> Manuel muhasebe sistemi</li>
+                    <li><i class="fa-solid fa-check"></i> Teklif formu oluştur</li>
+                    <li><i class="fa-solid fa-check"></i> Extre formu oluştur</li>
+                    <li><i class="fa-solid fa-check"></i> Hızlı dosya yükle ve gizle</li>
+                    <li><i class="fa-solid fa-check"></i> Karşılıklı hızlı ön muhasebe</li>
                   </ul>
                   <button class="cta-btn">Plan Seç</button>
                 </div>
 
-                <div class="pricing-card standard">
+                <div class="single-price">
                   <div class="heading">
                     <h4 class="header-title">Lite</h4>
-                    <p class="yillik">3 Yıllık pakettir</p>
+                    <p class="yillik">1 Yıllık pakettir</p>
                   </div>
                   <p class="price">
-                    90₺
+                    160₺
                     <span class="month-text">/Ay</span>
                   </p>
                   <ul class="features">
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Manuel muhasebe sistemi
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Teklif formu oluştur
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Extre formu oluştur
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Hızlı dosya yükle ve gizle
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Karşılıklı hızlı ön muhasebe
-                    </li>
-                  </ul>
-                  <button class="cta-btn">Plan Seç</button>
-                </div>
-                <div class="pricing-card premium">
-                  <div class="heading">
-                    <h4 class="header-title">Enterprise</h4>
-                    <p class="yillik">2 Yıllık pakettir</p>
-                  </div>
-                  <p class="price">
-                    120₺
-                    <span class="month-text">/Ay</span>
-                  </p>
-                  <ul class="features">
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Manuel muhasebe sistemi
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Teklif formu oluştur
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Extre formu oluştur
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Hızlı dosya yükle ve gizle
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-check"></i>
-                      Karşılıklı hızlı ön muhasebe
-                    </li>
+                    <li><i class="fa-solid fa-check"></i> Manuel muhasebe sistemi</li>
+                    <li><i class="fa-solid fa-check"></i> Teklif formu oluştur</li>
+                    <li><i class="fa-solid fa-check"></i> Extre formu oluştur</li>
+                    <li><i class="fa-solid fa-check"></i> Hızlı dosya yükle ve gizle</li>
+                    <li><i class="fa-solid fa-check"></i> Karşılıklı hızlı ön muhasebe</li>
                   </ul>
                   <button class="cta-btn">Plan Seç</button>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
