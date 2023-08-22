@@ -62,7 +62,6 @@
               class="nav-link"
               data-toggle="collapse"
               href="muhasebe.html"
-
               aria-expanded="false"
               aria-controls="ui-basic"
             >
@@ -76,7 +75,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link"href="havuz.html">
+            <a class="nav-link" href="havuz.html">
               <span class="menu-icon">
                 <img src="assets/images/projemhavuzda/havuz.png" alt="havuz" />
               </span>
@@ -121,7 +120,6 @@
               class="nav-link"
               data-toggle="collapse"
               href="profile.html"
-
               aria-expanded="false"
               aria-controls="auth"
             >
@@ -247,31 +245,23 @@
                   class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                   aria-labelledby="profileDropdown"
                 >
-                  <h6 class="p-3 mb-0">Profile</h6>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon bg-dark rounded-circle">
-                        <i class="mdi mdi-settings text-success"></i>
-                      </div>
-                    </div>
+                  <a class="dropdown-item preview-item" href="#">
                     <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Settings</p>
+                      <p class="preview-subject mb-1">Ayarlar</p>
                     </div>
                   </a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item preview-item">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon bg-dark rounded-circle">
-                        <i class="mdi mdi-logout text-danger"></i>
-                      </div>
-                    </div>
+                  <a class="dropdown-item preview-item" href="#">
                     <div class="preview-item-content">
-                      <p class="preview-subject mb-1">Log out</p>
+                      <p class="preview-subject mb-1">Profil</p>
                     </div>
                   </a>
                   <div class="dropdown-divider"></div>
-                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                  <a class="dropdown-item preview-item" href="#">
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Çıkış</p>
+                    </div>
+                  </a>
                 </div>
               </li>
             </ul>
@@ -303,7 +293,9 @@
                           >Banka ve Ödeme Bilgileri</a
                         >
                         <a href="guvenlik.html" class="header-top">Güvenlik</a>
-                        <a href="bildirim.html" class="header-top">Bildirim Ayarları</a>
+                        <a href="bildirim.html" class="header-top"
+                          >Bildirim Ayarları</a
+                        >
                       </div>
 
                       <div class="all-tables">
@@ -385,7 +377,9 @@
                                   name="fsurname"
                                   placeholder="İzmir"
                                 />
-                                <label style="margin-top: 12px;" for="fsurname">İlçe</label>
+                                <label style="margin-top: 12px" for="fsurname"
+                                  >İlçe</label
+                                >
                                 <input
                                   type="text"
                                   id="fsurname"
@@ -415,5 +409,8 @@
       </div>
     </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="main.js"></script>
 </html>

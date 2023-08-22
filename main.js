@@ -84,3 +84,6 @@ function toggleAccordion() {
 
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
 
+ $(document).ready(function() {
+  $('.dropdown-toggle').dropdown();
+});
