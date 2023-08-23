@@ -1,10 +1,171 @@
-.light-mode {
-    background-color: white;
-    color: black;
-  }
-
-  body.white-theme {
-    transition: 0.4s;
-    background-color: white;
-    color: black;
-  }
+.white-theme {
+  transition: 0.5s !important;
+}
+.white-theme .sidebar {
+  background: #fff;
+}
+.white-theme .sidebar .sidebar-brand-wrapper {
+  background: #fff;
+}
+.white-theme .main-panel {
+  background: #f9f9f9;
+}
+.white-theme .navbar .navbar-menu-wrapper {
+  background: #f9f9f9;
+}
+.white-theme .navbar-profile-name {
+  color: #1a1a1a;
+}
+.white-theme .btn-success {
+  background-color: #ffffff;
+}
+.white-theme .bx-toggle-left:before {
+  color: black;
+}
+.white-theme .navbar .navbar-menu-wrapper .search input {
+  border-radius: 8px;
+  border: 1px solid var(--grey-grey-3, #e1e3e6);
+  background: var(--white, #fff);
+}
+.white-theme .content-wrapper {
+  background: #f9f9f9;
+}
+.white-theme .card {
+  background: #fff;
+}
+.white-theme .header-top {
+  color: #1a1a1a;
+}
+.white-theme .top-headers {
+  background: #f9f9f9;
+}
+.white-theme .right-part {
+  border-radius: 8px;
+  border: 1px solid var(--grey-grey-3, #e1e3e6);
+  background: var(--grey-grey-1, #f8f8f8);
+  color: #757d8a;
+}
+.white-theme .table-responsive tr:nth-child(2n) {
+  border-radius: 0px 10px 10px 0px;
+  background: #f8f8f8;
+}
+.white-theme .pl-2 {
+  color: #404d61;
+}
+.white-theme .bottom-footer {
+  border-radius: 8px;
+  border: 1px solid var(--colors-blue-100-opacity, #4e73f8);
+  background: var(--white, #fff);
+  box-shadow: 0px 16px 8px -4px rgba(27, 46, 94, 0.03), 0px 4px 8px -6px rgba(27, 46, 94, 0.03);
+}
+.white-theme tbody {
+  border: 2px solid transparent;
+}
+.white-theme .sub-headers .left-part {
+  background: #f9f9f9;
+}
+.white-theme .sub-headers .left-part .selected-sub-header {
+  color: #404d61 !important;
+}
+.white-theme .sub-headers .left-part .selected-sub-header:nth-child(1) {
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(27, 46, 94, 0.03), 0px 16px 8px 0px rgba(27, 46, 94, 0.03);
+  color: #404d61;
+}
+.white-theme .baglanti-body tbody {
+  border: 2px solid transparent !important;
+}
+.white-theme .baglanti-body .top-container {
+  align-items: center;
+}
+.white-theme .baglanti-body .counting {
+  border: 1px solid var(--grey-grey-3, #e1e3e6);
+  background: var(--white, #fff);
+  color: #757d8a;
+}
+.white-theme .baglanti-body .form-c {
+  border-radius: 8px;
+  border: 1px solid var(--grey-grey-3, #e1e3e6);
+  background: var(--white, #fff);
+}
+.white-theme .baglanti-body #border-pagination {
+  padding: 8px;
+  margin-bottom: 0 !important;
+}
+.white-theme .baglanti-body #border-pagination li a {
+  border-radius: 8px;
+  border: 1px solid var(--grey-grey-3, #e1e3e6);
+  background: var(--white, #fff);
+}
+.white-theme .baglanti-body .bottom-footer {
+  border: none;
+  box-shadow: none;
+}
+.white-theme .kasa-all .bottom-footer {
+  border: none;
+  box-shadow: none;
+}
+.white-theme .kasa-all .v2 {
+  border-radius: 8px;
+  background: #f8f8f8;
+}
+.white-theme .kasa-all .bg-svg {
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
+}
+.white-theme .kasa-all .bg-svg-2 {
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
+}
+.white-theme #border-pagination {
+  padding: 8px;
+  margin-bottom: 0 !important;
+}
+.white-theme #border-pagination li a {
+  border-radius: 8px;
+  border: 1px solid var(--grey-grey-3, #e1e3e6);
+  background: var(--white, #fff);
+}
+.white-theme .muhasebe-all .gider {
+  color: #ff1f00 !important;
+}
+.white-theme .muhasebe-all .gider,
+.white-theme .muhasebe-all .gelir {
+  color: #3ac348;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+.white-theme .muhasebe-all .counting {
+  border: 1px solid var(--grey-grey-3, #e1e3e6);
+  background: var(--white, #fff);
+  color: #757d8a;
+}
+.white-theme .muhasebe-all .form-c {
+  border-radius: 8px;
+  border: 1px solid #e1e3e6;
+  background: #fff;
+}
+.white-theme .muhasebe-all .all-left-part .common-bg {
+  margin-top: 0;
+  border-radius: 8px;
+  border: 1px solid #e1e3e6;
+  background: #fff;
+}
+.white-theme .muhasebe-all .all-left-part .selected-sub-header {
+  color: #fff !important;
+}
+.white-theme .sub-top {
+  color: #1a1a1a;
+}
+.white-theme .calc-part {
+  background: #fff;
+}
+.white-theme .calc-part input {
+  border-radius: 8px;
+  border: 1px solid #e1e3e6;
+  background: #fff;
+}/*# sourceMappingURL=lightmode.css.map */

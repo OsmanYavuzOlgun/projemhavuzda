@@ -94,6 +94,23 @@ thead {
   padding-left: 0.5rem !important;
 }
 
+.account {
+  display: flex;
+  align-items: center;
+}
+
+.bg-svg {
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
+}
+.bg-svg-2 {
+  border-radius: 10px;
+  background: #1d1d1d;
+  padding: 8px;
+  box-shadow: 0px 2px 8px 0px rgba(27, 46, 94, 0.03);
+}
+
 .spec-max {
   max-width: 10px;
 }

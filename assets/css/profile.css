@@ -596,6 +596,10 @@
   z-index: -1;
 }
 
+.pp-add {
+  margin-top: 0 !important;
+  margin-bottom: 25px !important;
+}
 .content-wrapper {
   padding: 0 !important;
 }
@@ -830,7 +834,7 @@ input[type="range"]:disabled::-moz-range-thumb {
 }
 .profession {
   max-width: 312px;
-  margin-top: 14px;
+  margin-top: 8px;
   color: #757d8a;
   font-size: 16px;
   font-style: normal;
