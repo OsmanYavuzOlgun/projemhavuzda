@@ -23,7 +23,7 @@
   width: 100%;
 }
 
- .right-table {
+.right-table {
   overflow: hidden !important;
 }
 .add-image {
@@ -125,7 +125,7 @@ label {
 
 .header {
   position: absolute;
-  top: 39px;
+  top: 22px;
   left: 11px;
   width: 100%;
   background-color: #f43c3c;
@@ -194,7 +194,7 @@ label {
 }
 
 .add-image {
-  margin-top: 40px; /* Adjust margin as needed */
+  margin-top: 20px; /* Adjust margin as needed */
 }
 
 .add-image-files {
@@ -207,6 +207,9 @@ label {
   justify-content: center;
 }
 
+.text-common {
+  margin-left: 14px !important;
+}
 .width-set {
   /*   flex: 1 1 calc(33.33% - 10px); */
   margin-right: 10px;

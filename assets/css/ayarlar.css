@@ -220,11 +220,24 @@ input[type="checkbox"] {
   margin-top: 0 !important;
 }
 
+.mezun-all {
+  margin-left: 0 !important;
+}
+
 .araclar {
   display: flex;
   flex-wrap: wrap;
-  max-width: 230px;
+  max-width: 264px;
 }
+
+.all-user {
+  margin-left: 8px;
+}
+
+.araclar .common-bg {
+  margin-left: 8px;
+}
+
 .both-containers {
   display: flex;
   justify-content: space-between;
@@ -421,7 +434,7 @@ input[type="checkbox"] {
     text-align: center;
     justify-content: center;
   }
-  .header-top{
+  .header-top {
     margin-top: 10px;
   }
 }

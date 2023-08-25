@@ -160,7 +160,8 @@ input[type="radio"] {
   max-height: 707px;
 }
 
-.pricing-card:hover {
+
+.single-price:hover {
   background: #161616;
   transform: translateY(-16px) scale(1.02);
   transition: all 0.5s ease;
@@ -268,10 +269,22 @@ input[type="radio"] {
 
 .pricing-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   max-width: 100%;
   flex-wrap: wrap;
+}
+
+.main-panel {
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.col-row {
+  overflow: hidden;
+  overflow-y: auto;
+  height: 2000px;
 }
 
 .price {
@@ -282,7 +295,7 @@ input[type="radio"] {
   border-radius: 20px;
   border: 1px solid #282828;
   position: relative;
-  max-width: 352px;
+  max-width: 310px;
   width: 100%;
   padding: 32px;
   padding-bottom: 96px;
@@ -296,7 +309,10 @@ input[type="radio"] {
   .pricing-card {
     max-height: unset;
     margin: 0 auto;
-    justify-content: center;
+  }
+
+  .col-row {
+    height: auto;
   }
 
   .pricing-card .cta-btn {
@@ -316,7 +332,7 @@ input[type="radio"] {
     border: none;
     background: #f39200;
   }
-  .fieldset{
+  .fieldset {
     flex-direction: column;
     border-radius: 9px;
     padding: 10px;
@@ -327,7 +343,13 @@ input[type="radio"] {
     padding: 0 !important;
     margin: 0 !important;
     margin-bottom: 69px !important;
-    padding: 0 4px 53px 4px !important;
+    padding: 27px 4px 53px 4px !important;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .col-row {
+    height: auto;
   }
 }
 @media only screen and (max-width: 600px) {

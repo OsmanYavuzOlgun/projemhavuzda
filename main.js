@@ -84,10 +84,9 @@ function toggleAccordion() {
 
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
 
- $(document).ready(function() {
-  $('.dropdown-toggle').dropdown();
+$(document).ready(function () {
+  $(".dropdown-toggle").dropdown();
 });
-
 
 $(document).ready(function () {
   $("#aylik-btn").click(function () {
@@ -146,7 +145,6 @@ if (selectedTheme) {
   );
 }
 
-
 themeButton.addEventListener("click", () => {
   document.body.classList.toggle(whiteTheme);
   themeButton.classList.toggle(iconTheme);
@@ -154,3 +152,18 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
+var modal = document.getElementById("myModal");
+var trashImage = document.getElementById("p-trash-image");
+var navbarWrapper = document.getElementById("navbar-menu-wrapper");
+trashImage.onclick = function () {
+  modal.style.display = "block";
+};
+var closeBtn = document.getElementsByClassName("close")[0];
+closeBtn.onclick = function () {
+  modal.style.display = "none";
+};
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};

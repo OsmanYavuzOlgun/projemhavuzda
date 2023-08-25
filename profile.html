@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="assets/css/profile.css" />
     <link rel="stylesheet" href="assets/css/lightmode.css" />
 
-
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -36,7 +35,7 @@
   </head>
 
   <body>
-    <div class="container-scroller">
+    <div class="container-scroller profile-all">
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div
           class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top"
@@ -296,21 +295,6 @@
                 <div class="col-12 grid-margin status">
                   <div class="card">
                     <div class="card-body">
-                      <div class="top-headers">
-                        <a
-                          href="ayarlar.html"
-                          class="selected-header header-top"
-                          >Genel Ayarlar</a
-                        >
-                        <a href="bankaayarlar.html" class="header-top"
-                          >Banka ve Ödeme Bilgileri</a
-                        >
-                        <a href="guvenlik.html" class="header-top">Güvenlik</a>
-                        <a href="bildirim.html" class="header-top"
-                          >Bildirim Ayarları</a
-                        >
-                      </div>
-
                       <div class="all-tables">
                         <div class="table-responsive left-table">
                           <div class="profile-image">
@@ -325,12 +309,14 @@
                           </div>
                           <div class="name">İbrahim Göktuğ</div>
                           <div class="subname">@ibrahimgoktug</div>
-                          <div class="common-bg">10 Bağlantı</div>
-                          <div class="common-bg">
+                          <div class="common-bg baglanti-common">
+                            10 Bağlantı
+                          </div>
+                          <div class="common-bg bg-com">
                             Son Görülme <span class="change">Çevrimiçi</span>
                           </div>
-                          <div class="common-bg">Ort. Yanıt Süresi 4dk</div>
-                          <div class="common-bg">Üyelik Tarihi 16.03.2023</div>
+                          <div class="common-bg bg-com">Ort. Yanıt Süresi 4dk</div>
+                          <div class="common-bg bg-com">Üyelik Tarihi 16.03.2023</div>
 
                           <div class="info-box-hakkinda">
                             <div class="about">
@@ -876,47 +862,80 @@
                               </div>
                             </button>
                             <div class="content buy-do-c">
-                              <div class="storage">
-                                <div class="svg-lock">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="17"
-                                    height="16"
-                                    viewBox="0 0 17 16"
-                                    fill="none"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      clip-rule="evenodd"
-                                      d="M8.49989 10.6667H12.0554C12.5443 10.6667 12.9443 11.0667 12.9443 11.5556C12.9443 12.0444 12.5443 12.4444 12.0554 12.4444H8.49989C8.011 12.4444 7.611 12.0444 7.611 11.5556C7.611 11.0667 8.011 10.6667 8.49989 10.6667ZM4.05556 11.5556C4.05556 11.0667 4.45556 10.6667 4.94444 10.6667C5.43333 10.6667 5.83333 11.0667 5.83333 11.5556C5.83333 12.0445 5.43333 12.4445 4.94444 12.4445C4.45556 12.4445 4.05556 12.0445 4.05556 11.5556ZM13.8333 14.2222H3.16667C2.67689 14.2222 2.27778 13.824 2.27778 13.3333V8.88889H14.7222V13.3333C14.7222 13.824 14.3231 14.2222 13.8333 14.2222ZM5.24859 2.26933C5.3997 1.96622 5.70459 1.77778 6.04326 1.77778H10.957C11.2957 1.77778 11.6006 1.96622 11.7517 2.26933L14.173 7.11111H2.82726L5.24859 2.26933ZM16.3124 7.41511L13.3418 1.47378C12.8876 0.565333 11.9738 0 10.9569 0H6.04311C5.02622 0 4.11244 0.565333 3.65822 1.47378L0.687556 7.41511C0.564889 7.66044 0.5 7.936 0.5 8.20978V13.3333C0.5 14.8036 1.69644 16 3.16667 16H13.8333C15.3036 16 16.5 14.8036 16.5 13.3333V8.20978C16.5 7.936 16.4351 7.66044 16.3124 7.41511Z"
-                                      fill="white"
-                                    />
-                                  </svg>
-                                  <div class="current">Mevcut Alan</div>
-                                </div>
+                              <div class="all-storage">
+                                <div class="storage">
+                                  <div class="svg-lock">
+                                    <g class="svgg">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="17"
+                                        height="16"
+                                        viewBox="0 0 17 16"
+                                        fill="none"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M8.49989 10.6667H12.0554C12.5443 10.6667 12.9443 11.0667 12.9443 11.5556C12.9443 12.0444 12.5443 12.4444 12.0554 12.4444H8.49989C8.011 12.4444 7.611 12.0444 7.611 11.5556C7.611 11.0667 8.011 10.6667 8.49989 10.6667ZM4.05556 11.5556C4.05556 11.0667 4.45556 10.6667 4.94444 10.6667C5.43333 10.6667 5.83333 11.0667 5.83333 11.5556C5.83333 12.0445 5.43333 12.4445 4.94444 12.4445C4.45556 12.4445 4.05556 12.0445 4.05556 11.5556ZM13.8333 14.2222H3.16667C2.67689 14.2222 2.27778 13.824 2.27778 13.3333V8.88889H14.7222V13.3333C14.7222 13.824 14.3231 14.2222 13.8333 14.2222ZM5.24859 2.26933C5.3997 1.96622 5.70459 1.77778 6.04326 1.77778H10.957C11.2957 1.77778 11.6006 1.96622 11.7517 2.26933L14.173 7.11111H2.82726L5.24859 2.26933ZM16.3124 7.41511L13.3418 1.47378C12.8876 0.565333 11.9738 0 10.9569 0H6.04311C5.02622 0 4.11244 0.565333 3.65822 1.47378L0.687556 7.41511C0.564889 7.66044 0.5 7.936 0.5 8.20978V13.3333C0.5 14.8036 1.69644 16 3.16667 16H13.8333C15.3036 16 16.5 14.8036 16.5 13.3333V8.20978C16.5 7.936 16.4351 7.66044 16.3124 7.41511Z"
+                                          fill="white"
+                                        />
+                                      </svg>
+                                    </g>
 
-                                <div class="gb">1GB</div>
-                              </div>
+                                    <g class="svg-2">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="17"
+                                        height="16"
+                                        viewBox="0 0 17 16"
+                                        fill="none"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M8.49989 10.6667H12.0554C12.5443 10.6667 12.9443 11.0667 12.9443 11.5556C12.9443 12.0444 12.5443 12.4444 12.0554 12.4444H8.49989C8.011 12.4444 7.611 12.0444 7.611 11.5556C7.611 11.0667 8.011 10.6667 8.49989 10.6667ZM4.05556 11.5556C4.05556 11.0667 4.45556 10.6667 4.94444 10.6667C5.43333 10.6667 5.83333 11.0667 5.83333 11.5556C5.83333 12.0445 5.43333 12.4445 4.94444 12.4445C4.45556 12.4445 4.05556 12.0445 4.05556 11.5556ZM13.8333 14.2222H3.16667C2.67689 14.2222 2.27778 13.824 2.27778 13.3333V8.88889H14.7222V13.3333C14.7222 13.824 14.3231 14.2222 13.8333 14.2222ZM5.24859 2.26933C5.3997 1.96622 5.70459 1.77778 6.04326 1.77778H10.957C11.2957 1.77778 11.6006 1.96622 11.7517 2.26933L14.173 7.11111H2.82726L5.24859 2.26933ZM16.3124 7.41511L13.3418 1.47378C12.8876 0.565333 11.9738 0 10.9569 0H6.04311C5.02622 0 4.11244 0.565333 3.65822 1.47378L0.687556 7.41511C0.564889 7.66044 0.5 7.936 0.5 8.20978V13.3333C0.5 14.8036 1.69644 16 3.16667 16H13.8333C15.3036 16 16.5 14.8036 16.5 13.3333V8.20978C16.5 7.936 16.4351 7.66044 16.3124 7.41511Z"
+                                          fill="#1A1A1A"
+                                        />
+                                      </svg>
+                                    </g>
 
-                              
-
-                              <div class="storage">
-                                <div class="slider-fill" style="width: 50%;"></div>
-                                <div class="slider-container">
-                                  <div class="slider-text">
-                                    <div class="slider-label xx">1GB</div>
-                                    <div class="xx">
-                                      <!-- Input range with current storage value -->
-                                      <input type="range" id="storage-range" class="slider" min="1" max="10" value="5" />
-                                    </div>
-                                    <div class="slider-label xx">10GB</div>
+                                    <div class="current">Mevcut Alan</div>
                                   </div>
-                                  <!-- Display current storage value -->
-                                  <div id="storage-value" class="slider-value">5GB</div>
+
+                                  <div class="gb">1GB</div>
+                                </div>
+
+                                <div class="storage">
+                                  <div
+                                    class="slider-fill"
+                                    style="width: 50%"
+                                  ></div>
+                                  <div class="slider-container">
+                                    <div class="slider-text">
+                                      <div class="slider-label xx">1GB</div>
+                                      <div class="xx">
+                                        <!-- Input range with current storage value -->
+                                        <input
+                                          type="range"
+                                          id="storage-range"
+                                          class="slider"
+                                          min="1"
+                                          max="10"
+                                          value="5"
+                                        />
+                                      </div>
+                                      <div class="slider-label xx">10GB</div>
+                                    </div>
+                                    <!-- Display current storage value -->
+                                    <div
+                                      id="storage-value"
+                                      class="slider-value"
+                                    >
+                                      5GB
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
-
-
                             </div>
                           </div>
                           <div class="all-collapsible">
@@ -936,7 +955,7 @@
                                   class="buy-domain freelance"
                                   id="experience-part"
                                 >
-                                  <div>Freelancer</div>
+                                  <div class="freelance-part">Freelancer</div>
                                   <div class="belong">Alıcı</div>
                                 </div>
                                 <div class="arrow-down-orange">
@@ -961,11 +980,21 @@
                               <div class="first-row border-bottom-abs">
                                 <div class="row">
                                   <div class="rating-part-star">
-                                    <div>
-                                      <img
-                                        src="assets/images/projemhavuzda/rating1.png"
-                                        alt="rating first"
-                                      />
+                                    <div class="svgs">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="14"
+                                        height="20"
+                                        viewBox="0 0 14 20"
+                                        fill="none"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M7.30572 14.707C6.99472 14.536 6.61872 14.539 6.31572 14.72L2.56772 16.92L4.03572 11.21C4.91072 11.71 5.92172 12 6.99972 12C8.07772 12 9.08871 11.71 9.96472 11.21L11.4537 17.002L7.30572 14.707ZM6.99972 2C9.20572 2 10.9997 3.794 10.9997 6C10.9997 8.206 9.20572 10 6.99972 10C4.79372 10 2.99972 8.206 2.99972 6C2.99972 3.794 4.79372 2 6.99972 2ZM13.9687 18.751L11.6597 9.772C12.4957 8.74 12.9997 7.429 12.9997 6C12.9997 2.691 10.3087 0 6.99972 0C3.69172 0 0.999715 2.691 0.999715 6C0.999715 7.429 1.50372 8.74 2.33972 9.772L0.0317154 18.751C-0.0692846 19.143 0.0757154 19.556 0.398715 19.799C0.720715 20.042 1.15872 20.064 1.50572 19.862L6.83572 16.733L12.5157 19.875C12.6667 19.959 12.8337 20 12.9997 20C13.2167 20 13.4327 19.93 13.6127 19.791C13.9277 19.547 14.0687 19.138 13.9687 18.751Z"
+                                          fill="#8D93A2"
+                                        />
+                                      </svg>
                                     </div>
                                     <div class="service">
                                       <div class="quality">Hizmet Kalitesi</div>
@@ -983,11 +1012,21 @@
                                 </div>
                                 <div class="row">
                                   <div class="rating-part-star">
-                                    <div>
-                                      <img
-                                        src="assets/images/projemhavuzda/rating1.png"
-                                        alt="rating first"
-                                      />
+                                    <div class="svgs">
+                                      <svg
+                                        width="21"
+                                        height="20"
+                                        viewBox="0 0 21 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M14.4092 9H11.4092V6C11.4092 5.447 10.9612 5 10.4092 5C9.85718 5 9.40918 5.447 9.40918 6V10C9.40918 10.553 9.85718 11 10.4092 11H14.4092C14.9622 11 15.4092 10.553 15.4092 10C15.4092 9.447 14.9622 9 14.4092 9ZM10.4092 18C5.99818 18 2.40918 14.411 2.40918 10C2.40918 5.589 5.99818 2 10.4092 2C14.8202 2 18.4092 5.589 18.4092 10C18.4092 14.411 14.8202 18 10.4092 18ZM10.4092 0C4.89518 0 0.40918 4.486 0.40918 10C0.40918 15.514 4.89518 20 10.4092 20C15.9232 20 20.4092 15.514 20.4092 10C20.4092 4.486 15.9232 0 10.4092 0Z"
+                                          fill="#8D93A2"
+                                        />
+                                      </svg>
                                     </div>
                                     <div class="service">
                                       <div class="quality">Hizmet Kalitesi</div>
@@ -1005,11 +1044,21 @@
                                 </div>
                                 <div class="row">
                                   <div class="rating-part-star">
-                                    <div>
-                                      <img
-                                        src="assets/images/projemhavuzda/rating1.png"
-                                        alt="rating first"
-                                      />
+                                    <div class="svgs">
+                                      <svg
+                                        width="21"
+                                        height="19"
+                                        viewBox="0 0 21 19"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M5.81836 8C5.81836 7.448 6.26636 7 6.81836 7C7.37036 7 7.81836 7.448 7.81836 8C7.81836 8.552 7.37036 9 6.81836 9C6.26636 9 5.81836 8.552 5.81836 8ZM10.8184 7C10.2664 7 9.81836 7.448 9.81836 8C9.81836 8.552 10.2664 9 10.8184 9C11.3704 9 11.8184 8.552 11.8184 8C11.8184 7.448 11.3704 7 10.8184 7ZM14.8184 7C14.2664 7 13.8184 7.448 13.8184 8C13.8184 8.552 14.2664 9 14.8184 9C15.3704 9 15.8184 8.552 15.8184 8C15.8184 7.448 15.3704 7 14.8184 7ZM18.8184 13C18.8184 13.551 18.3694 14 17.8184 14H7.37236C6.82936 14 6.29536 14.148 5.82836 14.428L2.81836 16.234V3C2.81836 2.449 3.26736 2 3.81836 2H17.8184C18.3694 2 18.8184 2.449 18.8184 3V13ZM17.8184 0H3.81836C2.16436 0 0.818359 1.346 0.818359 3V18C0.818359 18.36 1.01236 18.693 1.32536 18.87C1.47836 18.957 1.64836 19 1.81836 19C1.99636 19 2.17436 18.953 2.33336 18.857L6.85736 16.143C7.01336 16.049 7.19136 16 7.37236 16H17.8184C19.4724 16 20.8184 14.654 20.8184 13V3C20.8184 1.346 19.4724 0 17.8184 0Z"
+                                          fill="#8D93A1"
+                                        />
+                                      </svg>
                                     </div>
                                     <div class="service">
                                       <div class="quality">Hizmet Kalitesi</div>

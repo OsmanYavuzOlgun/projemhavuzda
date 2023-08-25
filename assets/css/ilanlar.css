@@ -186,6 +186,13 @@
   color: #fca549;
 }
 
+.svgg {
+  display: unset !important;
+}
+.svg-2 {
+  display: none;
+}
+
 .single-advert {
   border-radius: 20px;
   border: 1px solid #282828;

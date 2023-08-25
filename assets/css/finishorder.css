@@ -76,6 +76,11 @@
 .subports {
   margin-right: 40px;
 }
+
+.content-wrapper{
+  padding: 16px !important;
+}
+
 .aaa {
   background-color: transparent;
   width: unset;

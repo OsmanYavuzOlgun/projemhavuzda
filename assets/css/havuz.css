@@ -50,6 +50,13 @@
   line-height: 24px;
 }
 
+.svgg {
+  display: unset !important;
+}
+.svg-2 {
+  display: none;
+}
+
 .all-adverts {
   flex-direction: column;
 }
@@ -105,7 +112,6 @@
   .card {
     padding: 27px;
   }
-
 }
 @media (max-width: 768px) {
   .top-part-ilan {
@@ -143,7 +149,7 @@
     margin: 0 auto;
   }
 
-  .card-body{
+  .card-body {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }

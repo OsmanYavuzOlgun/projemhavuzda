@@ -106,7 +106,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link"  href="baglantisiparis.html">
+            <a class="nav-link" href="baglantisiparis.html">
               <span class="menu-icon">
                 <img
                   src="assets/images/projemhavuzda/bağlantılar.png"
@@ -120,7 +120,6 @@
             <a
               class="nav-link"
               href="profile.html"
-
               aria-expanded="false"
               aria-controls="auth"
             >
@@ -180,7 +179,10 @@
           >
             <a class="navbar-brand brand-logo-mini" href="index.html">PH</a>
           </div>
-          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+          <div
+            class="navbar-menu-wrapper flex-grow d-flex align-items-stretch"
+            id="navbar-menu-wrapper"
+          >
             <ul class="navbar-nav w-100">
               <li class="nav-item w-100">
                 <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
@@ -208,8 +210,9 @@
                     src="assets/images/projemhavuzda/icon1.svg"
                     alt="icon 1"
                 /></a>
+              </li>
 
-             <li class="nav-item dropdown d-none d-lg-block">
+              <li class="nav-item dropdown d-none d-lg-block">
                 <a
                   class="nav-link btn btn-success create-new-button"
                   id="createbuttonDropdown"
@@ -221,7 +224,6 @@
                     alt="icon 1"
                 /></a>
               </li>
-
 
               <li class="nav-item dropdown d-none d-lg-block">
                 <a
@@ -512,9 +514,17 @@
                                   <img
                                     class="right-images"
                                     src="assets/images/projemhavuzda/p-trash.png"
-                                    alt="p-money"
+                                    alt="p-trash"
+                                    id="p-trash-image"
                                   />
                                 </span>
+                                <div id="myModal" class="modal">
+                                  <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <p class="modal-delete-text">Silmek istiyor musunuz?</p>
+                                    <div class="add-gelir-but add-gider-but modal--but">Sil</div>
+                                  </div>
+                                </div>
                               </td>
                             </tr>
                             <tr>

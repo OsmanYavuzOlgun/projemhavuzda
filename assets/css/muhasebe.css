@@ -166,6 +166,59 @@ input::placeholder {
   line-height: 18px;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1222;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-operate {
+  z-index: 2222;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+.modal--but{
+  width: max-content;
+    margin: 0 auto;
+}
+
+.modal-delete-text {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.close {
+  opacity: 1;
+  color: #ff0000;
+  float: right;
+  font-size: 38px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .gider {
   color: #ff1f00;
 }
@@ -179,8 +232,8 @@ input::placeholder {
   width: 200px;
 }
 
-.top-container{
-    align-items: center;
+.top-container {
+  align-items: center;
 }
 
 @media (max-width: 1382px) {

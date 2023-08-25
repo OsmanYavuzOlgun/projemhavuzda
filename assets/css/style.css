@@ -30900,6 +30900,21 @@ div.tagsinput span.tag a {
   }
 }
 
+  input,
+  select,
+  textarea,
+  div,
+  table,
+  nav,
+  nav div,
+  ul,
+  li {
+    transition: 0s !important;
+  } /* for the theme switch*/
+
+a:hover{
+  text-decoration: none;
+}
 .container-scroller {
   display: flex;
   position: relative;
@@ -30914,6 +30929,7 @@ div.tagsinput span.tag a {
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
+  background: #161616 !important;
 }
 
 
