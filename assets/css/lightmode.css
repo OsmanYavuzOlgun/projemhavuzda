@@ -154,6 +154,15 @@
   border: 1px solid var(--grey-grey-3, #e1e3e6);
   background: var(--white, #fff);
 }
+.white-theme .bildirimler-all .single-advert {
+  background-color: transparent;
+}
+.white-theme .bildirimler-all .give-offer {
+  color: var(--grey-grey-6, #5a6474);
+}
+.white-theme .bildirimler-all .exp, .white-theme .bildirimler-all .job-sub {
+  color: var(--grey-grey-5, #757d8a);
+}
 .white-theme .muhasebe-all .gider {
   color: #ff1f00 !important;
 }

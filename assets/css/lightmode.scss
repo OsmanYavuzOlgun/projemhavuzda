@@ -175,6 +175,18 @@
     background: var(--white, #fff);
   }
 
+  .bildirimler-all {
+    .single-advert {
+      background-color: transparent;
+    }
+    .give-offer {
+      color: var(--grey-grey-6, #5a6474);
+    }
+    .exp, .job-sub {
+      color: var(--grey-grey-5, #757d8a);
+    }
+  }
+
   .muhasebe-all {
     .gider {
       color: #ff1f00 !important;
