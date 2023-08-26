@@ -52,6 +52,12 @@ body.dark-theme {
   --body-color: #0e0d0d;
   --container-color: #302728;
 
+  @media screen and (max-width: 768px) {
+    .nav__menu {
+      border: 1px solid white;
+    }
+  }
+
   .nav__link {
     color: #fff;
   }
@@ -190,9 +196,11 @@ nav {
 
 .site-example {
   position: absolute;
-  bottom: calc(50% - 350px);
-  width: 946px;
-  height: 440px;
+  bottom: calc(50% - 471px);
+  max-width: 946px !important;
+  width: 100%;
+  height: auto;
+  max-height: 440px;
   z-index: auto;
   z-index: 2222222;
   left: 50%;
@@ -237,7 +245,7 @@ nav {
       right: 0;
       width: 90%;
       margin: 0 auto;
-      padding: 2.5rem 0 0;
+      padding: 2.5rem 0;
       text-align: center;
       background-color: var(--body-color);
       transition: 0.4s;
@@ -445,7 +453,7 @@ nav {
 }
 
 .home {
-  padding-bottom: 47rem;
+  padding-bottom: 32rem;
   &__container {
     row-gap: 0.5rem;
   }
