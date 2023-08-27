@@ -1,3 +1,5 @@
+@import "lightmode.css";
+
 @-moz-keyframes flash {
   0% {
     opacity: 1;
@@ -9571,6 +9573,10 @@ template {
 
 [hidden] {
   display: none !important;
+}
+
+.nav-active{
+  background-color:red;
 }
 
 h1,
@@ -30234,7 +30240,7 @@ div.tagsinput span.tag a {
   content: "";
   width: 3px;
   height: 100%;
-  background: #0090e7;
+  background: #F39200;
   display: inline-block;
   position: absolute;
   left: 0;
@@ -30242,7 +30248,7 @@ div.tagsinput span.tag a {
 }
 
 .sidebar .nav .nav-item.active>.nav-link .menu-title {
-  color: #ffffff;
+  color: #F39200;
 }
 
 .sidebar .nav .nav-item.active>.nav-link i {

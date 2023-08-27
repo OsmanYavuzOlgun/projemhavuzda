@@ -1,3 +1,43 @@
+  const currentPage = window.location.pathname;
+  const navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach((link) => {
+    const linkPath = link.getAttribute("href");
+    if (currentPage.endsWith(linkPath)) {
+      link.closest(".nav-item").classList.add("active");
+    }
+  });
+  const themeButton = document.getElementById("theme-button");
+  const whiteTheme = "white-theme";
+  const iconTheme = "bx-toggle-right";
+  const selectedTheme = localStorage.getItem("selected-theme");
+  const selectedIcon = localStorage.getItem("selected-icon");
+  const getCurrentTheme = () =>
+    document.body.classList.contains(whiteTheme) ? "dark" : "light";
+  const getCurrentIcon = () =>
+    themeButton.classList.contains(iconTheme)
+      ? "bx-toggle-left"
+      : "bx-toggle-right";
+
+  if (selectedTheme) {
+    document.body.classList.add("white-theme");
+    themeButton.classList[selectedIcon === "bx-toggle-left" ? "add" : "remove"](
+      iconTheme
+    );
+  }
+
+  themeButton.addEventListener("click", () => {
+    document.body.classList.toggle(whiteTheme);
+    themeButton.classList.toggle(iconTheme);
+    localStorage.setItem("selected-theme", getCurrentTheme());
+    localStorage.setItem("selected-icon", getCurrentIcon());
+  });
+
+  var theme = document.getElementsByTagName('link')[0];
+   
+  theme.setAttribute('href', 'assets/css/lightmode.css');
+
+
+
 function increaseValue() {
   var input = document.getElementById("quantity");
   var value = parseInt(input.value, 10);
@@ -122,38 +162,7 @@ $(document).ready(function () {
   storageValue.text(initialValue + "GB");
 });
 
-const themeButton = document.getElementById("theme-button");
-const whiteTheme = "white-theme";
-const iconTheme = "bx-toggle-right";
-
-const selectedTheme = localStorage.getItem("selected-theme");
-const selectedIcon = localStorage.getItem("selected-icon");
-
-const getCurrentTheme = () =>
-  document.body.classList.contains(whiteTheme) ? "dark" : "light";
-const getCurrentIcon = () =>
-  themeButton.classList.contains(iconTheme)
-    ? "bx-toggle-left"
-    : "bx-toggle-right";
-
-if (selectedTheme) {
-  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-    whiteTheme
-  );
-  themeButton.classList[selectedIcon === "bx-toggle-left" ? "add" : "remove"](
-    iconTheme
-  );
-}
-
-themeButton.addEventListener("click", () => {
-  document.body.classList.toggle(whiteTheme);
-  themeButton.classList.toggle(iconTheme);
-  localStorage.setItem("selected-theme", getCurrentTheme());
-  localStorage.setItem("selected-icon", getCurrentIcon());
-});
-
 var modal = document.getElementById("myModal");
-var trashImage = document.getElementById("p-trash-image");
 var navbarWrapper = document.getElementById("navbar-menu-wrapper");
 trashImage.onclick = function () {
   modal.style.display = "block";

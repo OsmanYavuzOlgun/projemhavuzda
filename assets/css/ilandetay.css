@@ -214,6 +214,9 @@
   background: #f39200;
   margin-left: 10px;
 }
+.name {
+  font-size: 20px;
+}
 
 .right-panel-add {
   margin-top: 20px;

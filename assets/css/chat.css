@@ -103,8 +103,17 @@
   margin-top: 30px;
   display: flex;
   align-items: start;
+  padding: 16px;
 }
 
+.selected-message-box {
+  border-radius: 8px;
+  background: var(--colors-blue-100-opacity, #4e73f8);
+  padding: 16px;
+}
+.selected-message-box .file-send {
+  color: #f1f2f3;
+}
 .second-col {
   margin-left: 16px;
 }
@@ -430,7 +439,7 @@ body {
   .app-main {
     height: 100%;
   }
-  .card{
+  .card {
     height: 1000px;
   }
 }

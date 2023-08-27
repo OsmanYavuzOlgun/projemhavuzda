@@ -1,5 +1,14 @@
-.white-theme {
+body.white-theme {
   transition: 0s !important;
+
+  .sidebar .nav .nav-item.active > .nav-link {
+    background: #f8f8f8 !important;
+    color: #f39200 !important;
+  }
+
+  .sidebar .nav .nav-item.active > .nav-link .menu-title {
+    color: #f39200 !important;
+  }
 
   input,
   select,
@@ -101,6 +110,33 @@
     }
   }
 
+  .ilan-all {
+    .right-table,
+    .left-table {
+      background: var(--white, #fff);
+    }
+    .border-bottom-abs:after {
+      border-bottom: 1px solid #e1e3e6;
+    }
+    .about-advert,
+    .port,
+    .detail-job,
+    .name,
+    .change,
+    .about-text,
+    .teslim {
+      color: #1a1a1a;
+    }
+    .top-right {
+      background: #f9f9f9;
+      background-image: url("../images/projemhavuzda/heart-white.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .all-tables {
+      background-color: #f9f9f9;
+    }
+  }
   .baglanti-body {
     tbody {
       border: 2px solid transparent !important;
@@ -182,8 +218,35 @@
     .give-offer {
       color: var(--grey-grey-6, #5a6474);
     }
-    .exp, .job-sub {
+    .exp,
+    .job-sub {
       color: var(--grey-grey-5, #757d8a);
+    }
+  }
+
+  .chat-all {
+    .chat-input-wrapper {
+      background: var(--white, #fff);
+      box-shadow: 0px 4px 8px -2px rgba(27, 46, 94, 0.04);
+    }
+    .chat-input {
+      border: 1px solid var(--grey-grey-3, #e1e3e6);
+      background: var(--white, #fff);
+    }
+    .send-btn {
+      background: var(--colors-blue-100-opacity, #4e73f8);
+      padding: 4px;
+    }
+    .left-table {
+      background: #f8f8f8;
+    }
+    .name {
+      color: var(--grey-grey-6, #5a6474);
+    }
+    .selected-message-box {
+      .name {
+        color: var(--white, #fff);
+      }
     }
   }
 

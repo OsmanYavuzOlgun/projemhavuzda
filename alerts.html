@@ -21,8 +21,13 @@
     <link rel="stylesheet" href="assets/css/baglanti.css" />
     <link rel="stylesheet" href="assets/css/kasam.css" />
     <link rel="stylesheet" href="assets/css/ayarlar.css" />
-    <link rel="stylesheet" href="assets/css/addilan.css" />
-
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <link rel="stylesheet" href="assets/css/ilanlar.css" />
+    <link rel="stylesheet" href="assets/css/ilandetay.css" />
+    <link rel="stylesheet" href="assets/css/baglantilarim.css" />
+    <link rel="stylesheet" href="assets/css/finishorder.css" />
+    <link rel="stylesheet" href="assets/css/faq.css" />
+    <link rel="stylesheet" href="assets/css/alerts.css" />
 
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -37,7 +42,7 @@
   </head>
 
   <body>
-    <div class="container-scroller add-port-all">
+    <div class="container-scroller faq-all">
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div
           class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top"
@@ -108,7 +113,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link"  href="baglanti.html">
+            <a class="nav-link" href="baglanti.html">
               <span class="menu-icon">
                 <img
                   src="assets/images/projemhavuzda/bağlantılar.png"
@@ -211,7 +216,7 @@
                 /></a>
               </li>
 
-              <li class="nav-item dropdown d-none d-lg-block">
+             <li class="nav-item dropdown d-none d-lg-block">
                 <a
                   class="nav-link btn btn-success create-new-button"
                   id="createbuttonDropdown"
@@ -291,141 +296,114 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="row"></div>
             <div class="row order-status-row">
               <div class="row">
                 <div class="col-12 grid-margin status">
                   <div class="card">
                     <div class="card-body">
-                      <div class="top-headers">
-                        <div class="header-top">Portfolyo Ekle</div>
-                      </div>
-
                       <div class="all-tables">
                         <div class="table-responsive right-table">
-                          <div class="text-common">Kategori Seç</div>
-                          <div class="information-inputs">
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">Kategori</label>
-                                <div class="input-group-cat">
-                                  <select
-                                    class="common-bg"
-                                    name="elektrik"
-                                    id="elektrik"
-                                  >
-                                    <option value="kullanıcı">Elektrik</option>
-                                    <option value="kullanıcı">Elektrik</option>
-                                    <option value="kullanıcı">Elektrik</option>
-                                    <option value="kullanıcı">Elektrik</option>
-                                  </select>
-                                  <select
-                                    class="common-bg"
-                                    name="elektrik projesi"
-                                    id="elektrik projesi"
-                                  >
-                                    <option value="kullanıcı">
-                                      Elektrik projesi
-                                    </option>
-                                    <option value="kullanıcı">
-                                      Elektrik projesi
-                                    </option>
-                                    <option value="kullanıcı">
-                                      Elektrik projesi
-                                    </option>
-                                    <option value="kullanıcı">
-                                      Elektrik projesi
-                                    </option>
-                                  </select>
+                        </section>
+                        <section class="freuqently section bd-container container-resp" id="faq">
+                          <div class="container">
+                            <h2 class="faq-title">Uyarılar</h2>
+                            <div id="openModalDiv" class="open-modal blue-border">
+                                <div class="svg-modal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 14C20 14.551 19.552 15 19 15H12.087H11.913H5C4.448 15 4 14.551 4 14V6C4 5.449 4.448 5 5 5H19C19.552 5 20 5.449 20 6V14ZM19 3H5C3.346 3 2 4.346 2 6V14C2 15.654 3.346 17 5 17H11V19H7C6.45 19 6 19.45 6 20C6 20.55 6.45 21 7 21H17C17.55 21 18 20.55 18 20C18 19.45 17.55 19 17 19H13V17H19C20.654 17 22 15.654 22 14V6C22 4.346 20.654 3 19 3Z" fill="#4E73F8"/>
+                                      </svg>
                                 </div>
-                              </div>
-                            </div>
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">Portfolyo Başlığı</label>
-                                <input
-                                  class="all-row common-bg"
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Elektrik Projelerinizi çizerim"
-                                />
-                              </div>
+                                <div class="open-text text blue-text">
+                                    <div>Sistem Bildirimi</div>
+                                    <div class="caption">Caption</div>
+                                </div>
+                                </div>
+                            <div id="modal" class="modal">
+                                <div class="modal-content">
+                                <span id="closeModalBtn" class="close">&times;</span>
+                                <h2>Emin misin?</h2>
+                                <p>Bunu geriye alamazsınız.</p>
+                                <div class="button-wrapper">
+                                    <button class="yes">Evet</button>
+                                    <button class="no">Hayır</button>
+
+                                </div>
+                                </div>
                             </div>
 
-                            <div class="first-input-row">
-                              <div class="left">
-                                <label for="fname">Portfolyo Detayları</label>
-                                <input
-                                  class="all-row common-bg"
-                                  type="text"
-                                  id="fname"
-                                  name="fname"
-                                  placeholder="Elektrik ruhsat projelerinizi mimarinize uygun şekilde çiziyorum"
-                                />
-                              </div>
-                            </div>
-                            <div class="first-input-row row-col-first">
-                              <div class="left">
-                                <div class="label">Galeri</div>
-                              </div>
-                              <div class="all-images">
-                                <div class="add-image">
-                                  <div class="wrapper-add">
-                                    <a class="add-file">
-                                      <img
-                                        src="assets/images/projemhavuzda/attach.png"
-                                        alt="attach"
-                                      />
-                                      Dosya Ekle</a
-                                    >
-                                    <div class="file-types">
-                                      JPG, PNG, MP4, DWG
-                                    </div>
-                                  </div>
+                            <div id="openModalDiv-2" class="open-modal orange-border orange-bg">
+                                <div class="svg-modal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14 9H11V6C11 5.447 10.552 5 10 5C9.448 5 9 5.447 9 6V10C9 10.553 9.448 11 10 11H14C14.553 11 15 10.553 15 10C15 9.447 14.553 9 14 9ZM10 18C5.589 18 2 14.411 2 10C2 5.589 5.589 2 10 2C14.411 2 18 5.589 18 10C18 14.411 14.411 18 10 18ZM10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0Z" fill="#FCA549"/>
+                                        </svg>
                                 </div>
-                                <div class="image-container">
-                                  <div class="header">
-                                    <div class="header-text">Kapak Görseli</div>
-                                    <div class="header-icons">
-                                      <img
-                                        src="assets/images/projemhavuzda/delete.svg"
-                                        alt="delete"
-                                      />
-                                      <img
-                                        class="pencil"
-                                        src="assets/images/projemhavuzda/pencil.svg"
-                                        alt="pencil"
-                                      />
-                                    </div>
-                                  </div>
-                                  <div class="add-image">
-                                    <img
-                                      src="assets/images/projemhavuzda/map.png"
-                                      alt="attach"
-                                      class="add-image-files"
-                                    />
-                                  </div>
+                                <div class="open-text text orange-text">
+                                  <div>Bekleme Bildirimi</div>
+                                  <div class="caption">Caption</div>
                                 </div>
-                                <div class="image-container">
-                                  <div class="add-image">
-                                    <img
-                                      src="assets/images/projemhavuzda/map.png"
-                                      alt="attach"
-                                      class="add-image-files"
-                                    />
+                              </div>
+                              <div id="modal-2" class="modal">
+                                <div class="modal-content">
+                                  <span id="closeModalBtn-2" class="close">&times;</span>
+                                  <h2>Emin misin?</h2>
+                                  <p>Bunu geriye alamazsınız.</p>
+                                  <div class="button-wrapper">
+                                    <button class="yes">Evet</button>
+                                    <button class="no">Hayır</button>
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                            <div class="first-input-row save-row">
-                              <div class="left">
-                                <button class="save-button bottom-s">
-                                  Kaydet
-                                </button>
+
+                              <div id="openModalDiv-3" class="open-modal red-border red-bg">
+                                <div class="svg-modal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.707 7.293C12.316 6.902 11.684 6.902 11.293 7.293L10 8.586L8.707 7.293C8.316 6.902 7.684 6.902 7.293 7.293C6.902 7.684 6.902 8.316 7.293 8.707L8.586 10L7.293 11.293C6.902 11.684 6.902 12.316 7.293 12.707C7.488 12.902 7.744 13 8 13C8.256 13 8.512 12.902 8.707 12.707L10 11.414L11.293 12.707C11.488 12.902 11.744 13 12 13C12.256 13 12.512 12.902 12.707 12.707C13.098 12.316 13.098 11.684 12.707 11.293L11.414 10L12.707 8.707C13.098 8.316 13.098 7.684 12.707 7.293ZM10 18C5.589 18 2 14.411 2 10C2 5.589 5.589 2 10 2C14.411 2 18 5.589 18 10C18 14.411 14.411 18 10 18ZM10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0Z" fill="#FF4B6E"/>
+                                      </svg>
+                                </div>
+                                <div class="open-text text red-text">
+                                  <div>Olumsuz Bildirimi</div>
+                                  <div class="caption">Caption</div>
+                                </div>
                               </div>
-                            </div>
+                              <div id="modal-3" class="modal">
+                                <div class="modal-content">
+                                  <span id="closeModalBtn-3" class="close">&times;</span>
+                                  <h2>Emin misin?</h2>
+                                  <p>Bunu geriye alamazsınız.</p>
+                                  <div class="button-wrapper">
+                                    <button class="yes">Evet</button>
+                                    <button class="no">Hayır</button>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div id="openModalDiv-4" class="open-modal green-border green-bg">
+                                <div class="svg-modal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 9.833C16 9.281 16.448 8.833 17 8.833C17.552 8.833 18 9.281 18 9.833V15.399C18 16.833 16.833 18 15.4 18H2.6C1.167 18 0 16.833 0 15.399V2.6C0 1.166 1.167 0 2.6 0H12.167C12.719 0 13.167 0.447 13.167 1C13.167 1.552 12.719 2 12.167 2H2.6C2.269 2 2 2.269 2 2.6V15.399C2 15.73 2.269 16 2.6 16H15.4C15.731 16 16 15.73 16 15.399V9.833ZM6.3096 7.946C6.7096 7.564 7.3416 7.58 7.7236 7.979L9.2286 9.557L15.2816 3.304C15.6646 2.908 16.2976 2.896 16.6956 3.281C17.0926 3.665 17.1026 4.298 16.7186 4.695L9.9416 11.695C9.7536 11.89 9.4946 12 9.2236 12H9.2196C8.9476 11.999 8.6876 11.887 8.4996 11.69L6.2766 9.36C5.8946 8.96 5.9106 8.327 6.3096 7.946Z" fill="#07A287"/>
+                                      </svg>
+                                </div>
+                                <div class="open-text text green-text">
+                                  <div>Olumlu Bildirimi</div>
+                                  <div class="caption">Caption</div>
+                                </div>
+                              </div>
+                              <div id="modal-4" class="modal">
+                                <div class="modal-content">
+                                  <span id="closeModalBtn-4" class="close">&times;</span>
+                                  <h2>Emin misin?</h2>
+                                  <p>Bunu geriye alamazsınız.</p>
+                                  <div class="button-wrapper">
+                                    <button class="yes">Evet</button>
+                                    <button class="no">Hayır</button>
+                                  </div>
+                                </div>
+                              </div>
+
+
                           </div>
+                        </section>
+                          
                         </div>
                       </div>
                     </div>
@@ -441,5 +419,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="alerts.js"></script>
+
 </html>
