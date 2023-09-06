@@ -99,6 +99,14 @@
   }
 }
 
+.svgg {
+  display: unset !important;
+}
+.svg-2 {
+  display: none;
+}
+
+
 .title-top {
   font-size: 18px !important;
 }

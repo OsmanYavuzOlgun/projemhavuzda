@@ -110,6 +110,32 @@ body.white-theme {
     }
   }
 
+  .project-page-all {
+    .person-right {
+      background: #4e73f8;
+    }
+    .geekmark {
+      border: 1px solid var(--grey-grey-3, #e1e3e6);
+      background: var(--grey-grey-1, #f8f8f8);
+    }
+    .selected-file {
+      background: #f8f8f8;
+    }
+    .dosya {
+      color: #1a1a1a;
+    }
+    .svgg {
+      display: none !important;
+    }
+    .bottom-footer {
+      border: none;
+      background: #f8f8f8;
+    }
+    .svg-2 {
+      display: unset !important;
+    }
+  }
+
   .ilan-all {
     .right-table,
     .left-table {
