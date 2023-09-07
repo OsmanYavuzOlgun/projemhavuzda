@@ -114,9 +114,30 @@ body.white-theme {
     .person-right {
       background: #4e73f8;
     }
-    .geekmark {
+    .custom-input {
+      color: #161616;
       border: 1px solid var(--grey-grey-3, #e1e3e6);
-      background: var(--grey-grey-1, #f8f8f8);
+      background: var(--White, #fff);
+    }
+    .modal-content {
+      border: 1px solid #fefefe;
+      background-color: #fefefe;
+    }
+    .add-p {
+      color: #1a1a1a;
+    }
+    #addInput {
+      border: 1px solid var(--grey-grey-3, #e1e3e6) !important;
+      background: var(--grey-grey-1, #f8f8f8) !important;
+    }
+
+    .input-container label,
+    .input-with-checkbox label {
+      color: var(--grey-grey-6, #5a6474);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
     }
     .selected-file {
       background: #f8f8f8;
@@ -133,6 +154,36 @@ body.white-theme {
     }
     .svg-2 {
       display: unset !important;
+    }
+  }
+
+  .index-all {
+    .custom-input {
+      color: #161616;
+      border: 1px solid var(--grey-grey-3, #e1e3e6);
+      background: var(--White, #fff);
+    }
+    .modal-content {
+      border: 1px solid #fefefe;
+      background-color: #fefefe;
+    }
+
+    .add-p {
+      color: #1a1a1a;
+    }
+
+    #addInput {
+      border: 1px solid var(--grey-grey-3, #e1e3e6) !important;
+      background: var(--grey-grey-1, #f8f8f8) !important;
+    }
+
+    .input-container label,
+    .input-with-checkbox label {
+      color: var(--grey-grey-6, #5a6474);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
     }
   }
 

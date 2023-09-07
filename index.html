@@ -17,6 +17,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/ayarlar.css" />
+    <link rel="stylesheet" href="assets/css/index2.css" />
     <link rel="stylesheet" href="assets/css/lightmode.css" />
 
     <link
@@ -31,8 +33,8 @@
     />
   </head>
 
-  <body class="default">
-    <div class="container-scroller">
+  <body class="default ">
+    <div class="container-scroller index-all ">
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div
           class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top"
@@ -320,7 +322,109 @@
                           <div class="sub-top">Devam Eden İşler</div>
                           <div class="sub-top">Biten İşler</div>
                         </div>
-                        <div class="right-part">+</div>
+                        <div class="right-part " id="openModal">+</div>
+                      </div>
+
+                      <div id="myModal" class="modal">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <span class="close" id="closeModal"></span>
+                            <div class="top-modal">
+                              <div class="add-p">Proje Ekle</div>
+                              <button id="addInput">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M19 11H13V5C13 4.447 12.552 4 12 4C11.448 4 11 4.447 11 5V11H5C4.448 11 4 11.447 4 12C4 12.553 4.448 13 5 13H11V19C11 19.553 11.448 20 12 20C12.552 20 13 19.553 13 19V13H19C19.552 13 20 12.553 20 12C20 11.447 19.552 11 19 11Z"
+                                    fill="#757D8A"
+                                  />
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="modal-body">
+                            <div class="input-row">
+                              <div class="input-container">
+                                <label for="text1">Proje İsmi</label>
+                                <input
+                                  type="text"
+                                  id="text1"
+                                  placeholder="Enter Text"
+                                  class="custom-input"
+                                />
+                              </div>
+                              <div class="input-container small-inp">
+                                <label for="text1">Ada</label>
+                                <input
+                                  type="text"
+                                  id="text1"
+                                  placeholder="Enter Text"
+                                  class="custom-input"
+                                />
+                              </div>
+                              
+                              <div class="input-container small-inp">
+                                <label for="text3">Parsel</label>
+                                <input
+                                  type="text"
+                                  id="text3"
+                                  placeholder="Enter Text"
+                                  class="custom-input v2custom"
+                                />
+                              </div>
+                              <div class="input-container">
+                                <label for="text3">Adres</label>
+                                <input
+                                  type="text"
+                                  id="text3"
+                                  placeholder="Enter Text"
+                                  class="custom-input v2custom"
+                                />
+                              </div>
+                            </div>
+                            <div class="input-row">
+                              <div class="input-container">
+                                <label for="text1">Kişi</label>
+                                <input
+                                  type="text"
+                                  id="text1"
+                                  placeholder="Enter Text"
+                                  class="custom-input"
+                                />
+                              </div>
+                              <div class="input-container">
+                                <label for="text1">Ücret</label>
+                                <input
+                                  type="text"
+                                  id="text1"
+                                  placeholder="Enter Text"
+                                  class="custom-input"
+                                />
+                              </div>
+                              <div class="input-container">
+                                <label for="select1">İş Tanımı</label>
+                                <select id="select1" class="custom-input">
+                                  <option value="1">Option 1</option>
+                                  <option value="2">Option 2</option>
+                                  <option value="3">Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="bottom-buttons">
+                            <div class="bottom-text orange">Onayla</div>
+                            <div class="bottom-text ot-orange">Vazgeç</div>
+                          </div>
+                        </div>
                       </div>
 
                       <div class="table-responsive">
@@ -667,6 +771,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="modal-v2.js"></script>
   <script src="main.js"></script>
   <script>
     jQuery(document).ready(function ($) {

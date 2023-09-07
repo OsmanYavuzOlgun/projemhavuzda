@@ -163,9 +163,7 @@ themeButton.addEventListener("click", () => {
 var modal = document.getElementById("myModal");
 var trashImage = document.getElementById("p-trash-image");
 var navbarWrapper = document.getElementById("navbar-menu-wrapper");
-trashImage.onclick = function () {
-  modal.style.display = "block";
-};
+
 var closeBtn = document.getElementsByClassName("close")[0];
 closeBtn.onclick = function () {
   modal.style.display = "none";
@@ -174,4 +172,8 @@ window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+};
+
+trashImage.onclick = function () {
+  modal.style.display = "block";
 };

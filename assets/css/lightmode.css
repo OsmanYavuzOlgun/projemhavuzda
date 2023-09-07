@@ -102,9 +102,29 @@ body.white-theme .sub-headers .left-part .selected-sub-header:nth-child(1) {
 body.white-theme .project-page-all .person-right {
   background: #4e73f8;
 }
-body.white-theme .project-page-all .geekmark {
+body.white-theme .project-page-all .custom-input {
+  color: #161616;
   border: 1px solid var(--grey-grey-3, #e1e3e6);
-  background: var(--grey-grey-1, #f8f8f8);
+  background: var(--White, #fff);
+}
+body.white-theme .project-page-all .modal-content {
+  border: 1px solid #fefefe;
+  background-color: #fefefe;
+}
+body.white-theme .project-page-all .add-p {
+  color: #1a1a1a;
+}
+body.white-theme .project-page-all #addInput {
+  border: 1px solid var(--grey-grey-3, #e1e3e6) !important;
+  background: var(--grey-grey-1, #f8f8f8) !important;
+}
+body.white-theme .project-page-all .input-container label,
+body.white-theme .project-page-all .input-with-checkbox label {
+  color: var(--grey-grey-6, #5a6474);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 body.white-theme .project-page-all .selected-file {
   background: #f8f8f8;
@@ -121,6 +141,30 @@ body.white-theme .project-page-all .bottom-footer {
 }
 body.white-theme .project-page-all .svg-2 {
   display: unset !important;
+}
+body.white-theme .index-all .custom-input {
+  color: #161616;
+  border: 1px solid var(--grey-grey-3, #e1e3e6);
+  background: var(--White, #fff);
+}
+body.white-theme .index-all .modal-content {
+  border: 1px solid #fefefe;
+  background-color: #fefefe;
+}
+body.white-theme .index-all .add-p {
+  color: #1a1a1a;
+}
+body.white-theme .index-all #addInput {
+  border: 1px solid var(--grey-grey-3, #e1e3e6) !important;
+  background: var(--grey-grey-1, #f8f8f8) !important;
+}
+body.white-theme .index-all .input-container label,
+body.white-theme .index-all .input-with-checkbox label {
+  color: var(--grey-grey-6, #5a6474);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 body.white-theme .ilan-all .right-table,
 body.white-theme .ilan-all .left-table {
