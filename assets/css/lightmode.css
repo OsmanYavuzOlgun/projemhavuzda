@@ -5,8 +5,15 @@ body.white-theme .sidebar .nav .nav-item.active > .nav-link {
   background: #f8f8f8 !important;
   color: #f39200 !important;
 }
-body.white-theme .sidebar .nav .nav-item.active > .nav-link .menu-title {
+body.white-theme .nav-link:hover {
+  background-color: #f8f8f8 !important;
+}
+body.white-theme .sidebar .nav:not(.sub-menu) > .nav-item:hover:not(.nav-category):not(.account-dropdown) > .nav-link {
+  background-color: #f8f8f8 !important;
   color: #f39200 !important;
+}
+body.white-theme .sidebar .nav .nav-item.active > .nav-link .menu-title {
+  color: #ff9900 !important;
 }
 body.white-theme input,
 body.white-theme select,
@@ -141,6 +148,9 @@ body.white-theme .project-page-all .bottom-footer {
 }
 body.white-theme .project-page-all .svg-2 {
   display: unset !important;
+}
+body.white-theme .index-all .selected-header {
+  color: #1a1a1a !important;
 }
 body.white-theme .index-all .custom-input {
   color: #161616;

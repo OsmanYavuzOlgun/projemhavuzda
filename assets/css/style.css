@@ -30634,10 +30634,16 @@ div.tagsinput span.tag a {
   
 }
 
+.nav{
+  position: relative !important;
+}
+
 .nav-bottom{
-  position: absolute;
-    bottom: 10px;
-    position: fixed;
+  position: absolute !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 @media (max-width: 576px) {

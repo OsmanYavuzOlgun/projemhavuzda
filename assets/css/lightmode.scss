@@ -6,8 +6,20 @@ body.white-theme {
     color: #f39200 !important;
   }
 
-  .sidebar .nav .nav-item.active > .nav-link .menu-title {
+  .nav-link:hover {
+    background-color: #f8f8f8 !important;
+  }
+
+  .sidebar
+    .nav:not(.sub-menu)
+    > .nav-item:hover:not(.nav-category):not(.account-dropdown)
+    > .nav-link {
+    background-color: #f8f8f8 !important;
     color: #f39200 !important;
+  }
+
+  .sidebar .nav .nav-item.active > .nav-link .menu-title {
+    color: #ff9900 !important;
   }
 
   input,
@@ -158,6 +170,9 @@ body.white-theme {
   }
 
   .index-all {
+    .selected-header {
+      color: #1a1a1a !important;
+    }
     .custom-input {
       color: #161616;
       border: 1px solid var(--grey-grey-3, #e1e3e6);

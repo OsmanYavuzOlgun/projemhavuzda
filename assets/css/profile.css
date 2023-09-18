@@ -831,7 +831,7 @@ input[type="range"]:disabled::-moz-range-thumb {
 .common-bg {
   font-size: 14px;
   margin-top: 28px;
-  padding: 8px 16px;
+  padding: 8px 16px !important;
 }
 
 .about {
@@ -863,10 +863,7 @@ input[type="range"]:disabled::-moz-range-thumb {
   line-height: 150%;
   margin-top: 0 !important;
 }
-.profession {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .bg-v2 {
   border: 1px solid #e1e3e6;
   background: transparent;
@@ -880,14 +877,31 @@ input[type="range"]:disabled::-moz-range-thumb {
   margin-top: 24px !important;
 }
 
+.expertision{
+  display: flex;
+  justify-content: unset;
+  width: 100%;
+}
+
+.expertision > .common-bg > .profession{
+  width: 70px;
+  text-align: center;
+  margin-top: 0px;
+}
+.expertision > .common-bg:not(:first-child){
+  margin-left: 16px;
+}
 .profession {
-  max-width: 312px;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 8px;
   color: #757d8a;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  background: #1d1d1d;
+  border: none;
 }
 .info-box-hakkinda {
   width: 100%;
