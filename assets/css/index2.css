@@ -14,18 +14,21 @@
 }
 
 .modal-content {
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
-  border-radius: 10px;
-  border: 1px solid #282828;
-  background: #161616;
+  background: #161616 !important;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-clip: padding-box;
+  border-radius: 0.3rem;
+  outline: 0;
+  max-width: 600px;
+  margin: 0;
 }
 .add-p {
   color: #fff;
@@ -54,6 +57,9 @@
   color: #989898 !important;
 }
 
+#openModal {
+  color: white;
+}
 .selected-header::after {
   position: absolute;
   content: "";

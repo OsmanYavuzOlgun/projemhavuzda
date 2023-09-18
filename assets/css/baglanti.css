@@ -53,6 +53,12 @@ textarea {
   line-height: 24px; /* 133.333% */
 }
 
+.add-connection {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
 .add-baglanti {
   margin-right: 4px;
 }
@@ -66,8 +72,8 @@ textarea {
   background: #161616;
   width: 160px;
 }
-.add-con{
-    margin-left: 32px;
+.add-con {
+  margin-left: 32px;
 }
 .top-container {
   display: flex;

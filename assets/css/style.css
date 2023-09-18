@@ -30236,6 +30236,11 @@ div.tagsinput span.tag a {
   position: relative;
 }
 
+.sidebar .nav .nav-item {
+  width: 100%;
+  max-width: 200px;
+}
+
 .sidebar .nav .nav-item.active>.nav-link:before {
   content: "";
   width: 3px;
@@ -30969,3 +30974,12 @@ a:hover{
 
 }
 
+button {
+  background: transparent;
+  border: none;
+  color: #989898;
+}
+
+.button-v2{
+  color: white;
+}
